@@ -112,8 +112,53 @@ footer.md-footer.layout3.inner.inner {
 }
 
 .site-subtitle {
-    color: #FAFAFA;
-    font-family: Montserrat;
+    color: #FAFAFA !important;
+    font-family: "Montserrat", sans-serif !important;
+    text-align: center !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
+    /* Subtle black glow/shadow */
+    width: 100% !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.site-title {
+    font-family: "Cinzel", serif !important;
+    font-weight: 700 !important;
+
+    /* Gold Gradient Text */
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+
+    background-size: 200% 100% !important;
+}
+
+.layout11-title {
+    font-family: "Cinzel", serif !important;
+    font-weight: 700 !important;
+
+    /* Gold Gradient Text */
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+
+    background-size: 200% 100% !important;
+}
+
+.layout11-desc {
+    font-family: "Montserrat", sans-serif !important;
 }
 
 .item-text {
