@@ -284,13 +284,15 @@ div#layout11-title {
     box-shadow: none !important;
 }
 
-/* Form input text color */
-.md-form.layout7 .form-left .info-form2 .basic-info .basic-info-input input {
+/* Form input and textarea text color */
+.md-form.layout7 .form-left .info-form2 .basic-info .basic-info-input input,
+.md-form.layout7 .form-left .info-form2 .basic-info .basic-info-input textarea {
     color: #fafafa !important;
 }
 
-/* Input Placeholder Gold */
-.md-form.layout7 .form-left .info-form2 .basic-info .basic-info-input input::placeholder {
+/* Input and Textarea Placeholder Gold */
+.md-form.layout7 .form-left .info-form2 .basic-info .basic-info-input input::placeholder,
+.md-form.layout7 .form-left .info-form2 .basic-info .basic-info-input textarea::placeholder {
     color: hsl(45 100% 50%) !important;
     opacity: 1 !important;
     /* Firefox requires this */
