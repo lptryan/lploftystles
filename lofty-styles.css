@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Cinzel", serif;
+    font-family: "Cinzel", serif !important;
     background: linear-gradient(180deg,
             hsl(45 100% 70%),
             hsl(45 100% 50%),
