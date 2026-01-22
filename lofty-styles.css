@@ -2,14 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;500&display=swap');
 
 /* Fancy Gold Headings with Hover Shimmer */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Cinzel", serif;
-    background: linear-gradient(
-        180deg,
-        hsl(45 100% 70%),
-        hsl(45 100% 50%),
-        hsl(35 80% 40%)
-    );
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -22,7 +25,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Shimmer effect on hover */
-h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover {
     animation: shimmer 1.4s ease-in-out forwards;
 }
 
@@ -31,9 +39,11 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
     0% {
         background-position: -150%;
     }
+
     50% {
         background-position: 150%;
     }
+
     100% {
         background-position: 0%;
     }
@@ -49,12 +59,10 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
     /* Onyx background + gold border */
     background:
         linear-gradient(#0f0f10, #0f0f10) padding-box,
-        linear-gradient(
-            180deg,
+        linear-gradient(180deg,
             hsl(45 100% 70%),
             hsl(45 100% 50%),
-            hsl(35 80% 40%)
-        ) border-box;
+            hsl(35 80% 40%)) border-box;
 
     border: 2px solid transparent;
     border-radius: 6px;
@@ -86,11 +94,13 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
 .md-form.layout7 .form-left {
     background: #091010 !important;
 }
+
 .md-form.layout7 .form-right {
     background: #091010 !important;
 }
+
 .content {
-    background-color:  #091010 !important;
+    background-color: #091010 !important;
 }
 
 footer {
@@ -101,26 +111,30 @@ footer.md-footer.layout3.inner.inner {
     background-color: #000000 !important;
 }
 
-.site-subtitle{
-    color:#FAFAFA;
+.site-subtitle {
+    color: #FAFAFA;
     font-family: Montserrat;
 }
 
 .item-text {
     /* Luxury Gold Gradient matching your button's border colors */
-    background: linear-gradient(
-        180deg,
-        hsl(45, 100%, 70%) 0%,   /* Light Gold */
-        hsl(45, 100%, 50%) 50%,  /* True Gold */
-        hsl(35, 80%, 40%) 100%   /* Deep Gold/Bronze */ 
-    ) !important;
+    background: linear-gradient(180deg,
+            hsl(45, 100%, 70%) 0%,
+            /* Light Gold */
+            hsl(45, 100%, 50%) 50%,
+            /* True Gold */
+            hsl(35, 80%, 40%) 100%
+            /* Deep Gold/Bronze */
+        ) !important;
     padding: 20px;
-    border-radius: 8px; /* Slightly more rounded than the button for a softer card feel */
+    border-radius: 8px;
+    /* Slightly more rounded than the button for a softer card feel */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
-    min-height: 120px; /* Optional: keeps all items uniform if you have a grid */
+    min-height: 120px;
+    /* Optional: keeps all items uniform if you have a grid */
 }
 
 .item-title {
@@ -133,9 +147,9 @@ footer.md-footer.layout3.inner.inner {
     background: linear-gradient(180deg, #353839 0%, #0f0f10 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
     /* Fallback for older browsers */
-    color: #0f0f10; 
+    color: #0f0f10;
 }
 
 .item-desc {
@@ -151,4 +165,76 @@ footer.md-footer.layout3.inner.inner {
 
     /* Fallback */
     color: #353839;
+}
+
+/* 1. Define the Pulsing Glow Animation */
+@keyframes gold-pulse {
+    0% {
+        box-shadow: 0 0 5px rgba(212, 175, 55, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(212, 175, 55, 0.4);
+    }
+}
+
+/* 2. Style the Lofty Submit Buttons */
+.md-form.layout7 .form-left .info-form2 .submit-content .submit,
+.info-form2 .submit-content .submit-box .submit {
+    font-family: "Cinzel", serif !important;
+    min-width: 200px;
+    height: 58px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 0 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    /* Text Color */
+    color: #ffffff !important;
+
+    /* Onyx Background + Gold Border (Matching your original snippet) */
+    background:
+        linear-gradient(#0f0f10, #0f0f10) padding-box,
+        linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) border-box !important;
+
+    border: 2px solid transparent !important;
+    border-radius: 6px !important;
+
+    /* Smooth Transitions */
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+
+    /* Apply the slow pulsing glow */
+    animation: gold-pulse 3s infinite ease-in-out;
+}
+
+/* 3. Hover Effects: Lift Up + Stronger Glow */
+.md-form.layout7 .form-left .info-form2 .submit-content .submit:hover,
+.info-form2 .submit-content .submit-box .submit:hover {
+    transform: translateY(-4px);
+    /* The "Lift" effect */
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.6) !important;
+    background-position: right center !important;
+    /* Shimmer movement */
+    filter: brightness(1.1);
+    animation: none;
+    /* Stop pulsing on hover so the lift glow takes over */
+}
+
+/* 4. Handle Disabled State */
+.info-form2 .submit-content .submit[disabled].submit-disabled {
+    cursor: not-allowed !important;
+    opacity: 0.4 !important;
+    animation: none !important;
+    transform: none !important;
+    box-shadow: none !important;
 }
