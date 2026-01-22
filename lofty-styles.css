@@ -254,3 +254,49 @@ footer.md-footer.layout3.inner.inner {
     color: #FFFFFF !important;
     text-decoration: underline !important;
 }
+
+/* Targets general text in the footer like "Powered by Lofty Inc." and "Copyright 2026" */
+.footer-container,
+.footer-container p,
+.footer-container span {
+    color: #fafafa !important;
+}
+
+/* Targets all links in the footer, including Terms, Privacy, and Cookie Policy */
+.footer-container a {
+    color: #fafafa !important;
+}
+
+/* Specific target for the disclaimer text at the very bottom */
+.footer-disclaimer,
+.footer-disclaimer p {
+    color: #fafafa !important;
+}
+
+/* Ensures the TREC and Fair Housing links also follow the color change */
+.footer-container .trec-links a,
+.footer-container .fair-housing-links a {
+    color: #fafafa !important;
+}
+
+/* Targets the typo class and the correct spelling */
+.declaimer,
+.disclaimer,
+.footer-disclaimer {
+    color: #fafafa !important;
+}
+
+/* Also targets links inside those specific containers */
+.declaimer a,
+.disclaimer a {
+    color: #fafafa !important;
+    text-decoration: underline;
+}
+
+.md-footer.layout3 .bottom-content .mls-declaimer-container-v2 .declaimer .content {
+    color: #fafafa !important;
+}
+
+.declaimer .site-p.content {
+    background-color: transparent !important;
+}
