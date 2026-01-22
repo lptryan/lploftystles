@@ -1,5 +1,5 @@
 /* Import fonts if not already in your project */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&family=Montserrat:wght@400;500&display=swap');
 
 /* Fancy Gold Headings with Hover Shimmer */
 h1,
@@ -249,10 +249,34 @@ footer.md-footer.layout3.inner.inner {
     color: #FFFFFF !important;
 }
 
-/* Agent info link style */
+/* Agent info link style - Luxury Gold */
 .info-item a {
-    color: #FFFFFF !important;
+    font-family: "Cinzel", serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+
+    /* Gold Gradient Text */
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+
+    /* Gold Underline */
     text-decoration: underline !important;
+    text-decoration-color: hsl(45 100% 50%) !important;
+    text-decoration-thickness: 2px !important;
+
+    transition: all 0.3s ease !important;
+    background-size: 200% 100% !important;
+}
+
+.info-item a:hover {
+    filter: drop-shadow(0 0 8px rgba(255, 215, 130, 0.6)) !important;
+    animation: shimmer 1.4s ease-in-out forwards;
 }
 
 /* Targets general text in the footer like "Powered by Lofty Inc." and "Copyright 2026" */
@@ -262,20 +286,47 @@ footer.md-footer.layout3.inner.inner {
     color: #fafafa !important;
 }
 
-/* Targets all links in the footer, including Terms, Privacy, and Cookie Policy */
-.footer-container a {
-    color: #fafafa !important;
-}
-
-/* Specific target for the disclaimer text at the very bottom */
-.footer-disclaimer,
-.footer-disclaimer p {
-    color: #fafafa !important;
-}
-
-/* Ensures the TREC and Fair Housing links also follow the color change */
+/* Targets all links in the footer, including Terms, Privacy, and Cookie Policy - Luxury Gold */
+.footer-container a,
+.declaimer a,
+.disclaimer a,
 .footer-container .trec-links a,
 .footer-container .fair-housing-links a {
+    font-family: "Cinzel", serif !important;
+    font-weight: 700 !important;
+
+    /* Gold Gradient Text */
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+
+    /* Gold Underline */
+    text-decoration: underline !important;
+    text-decoration-color: hsl(45 100% 50%) !important;
+    text-decoration-thickness: 2px !important;
+
+    transition: all 0.3s ease !important;
+    background-size: 200% 100% !important;
+}
+
+/* Hover Glow for Footer Links */
+.footer-container a:hover,
+.declaimer a:hover,
+.disclaimer a:hover,
+.footer-container .trec-links a:hover,
+.footer-container .fair-housing-links a:hover {
+    filter: drop-shadow(0 0 8px rgba(255, 215, 130, 0.6)) !important;
+    animation: shimmer 1.4s ease-in-out forwards;
+}
+
+/* Specific target for the disclaimer text at the very bottom - Keep plain text white/off-white */
+.footer-disclaimer,
+.footer-disclaimer p {
     color: #fafafa !important;
 }
 
@@ -286,17 +337,43 @@ footer.md-footer.layout3.inner.inner {
     color: #fafafa !important;
 }
 
-/* Also targets links inside those specific containers */
-.declaimer a,
-.disclaimer a {
-    color: #fafafa !important;
-    text-decoration: underline;
-}
-
 .md-footer.layout3 .bottom-content .mls-declaimer-container-v2 .declaimer .content {
     color: #fafafa !important;
 }
 
 .declaimer .site-p.content {
     background-color: transparent !important;
+}
+
+/* Navigation Menu - Luxury Styling */
+.head-menu .menu-item a {
+    font-family: "Cinzel", serif !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+
+    /* Gold Gradient Text - Slightly brighter for menu to stand out */
+    background: linear-gradient(180deg,
+            #FFD966,
+            #FFBF00,
+            #B87414) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+
+    transition: all 0.3s ease-in-out !important;
+    display: inline-block;
+}
+
+/* Gold Underline for Active and Hover */
+.head-menu .menu-item.active a,
+.head-menu .menu-item a:hover {
+    border-bottom: 2px solid #FFBF00 !important;
+    padding-bottom: 2px;
+}
+
+/* Hover Glow Effect */
+.head-menu .menu-item a:hover {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.6) !important;
+    transform: translateY(-2px);
+    /* Slight lift */
 }
