@@ -227,7 +227,12 @@ div#layout11-title {
     }
 }
 
-/* 2. Style the Lofty Submit Buttons */
+/* 2. Style the Lofty All Helper Buttons and Submit Buttons */
+.submit,
+.submit-btn,
+.search-button,
+.btn-search,
+.btn-item.plain,
 .md-form.layout7 .form-left .info-form2 .submit-content .submit,
 .info-form2 .submit-content .submit-box .submit {
     font-family: "Cinzel", serif !important;
@@ -263,6 +268,11 @@ div#layout11-title {
 }
 
 /* 3. Hover Effects: Lift Up + Stronger Glow */
+.submit:hover,
+.submit-btn:hover,
+.search-button:hover,
+.btn-search:hover,
+.btn-item.plain:hover,
 .md-form.layout7 .form-left .info-form2 .submit-content .submit:hover,
 .info-form2 .submit-content .submit-box .submit:hover {
     transform: translateY(-4px);
@@ -438,6 +448,28 @@ div#layout11-title {
 }
 
 /* Navigation Menu - Luxury Styling */
+.menu-item.has-child .wrapper {
+    background-color: #000000 !important;
+    border: 1px solid #333;
+    /* subtle border */
+}
+
+/* Register / Sign In Separator - Gold */
+.nav-container .head-account .item-line {
+    font-family: "Cinzel", serif !important;
+    /* Match font */
+    font-weight: 700;
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+    display: inline-block;
+}
+
 .head-menu .menu-item a,
 .nav-container .head-account .item-regist,
 .nav-container .head-account .item-login {
