@@ -241,7 +241,7 @@ footer.md-footer.layout3.inner.inner {
 
 /* Form input text color */
 .md-form.layout7 .form-left .info-form2 .basic-info .basic-info-input input {
-    color: #fafafa;
+    color: #fafafa !important;
 }
 
 /* Agent info text color */
