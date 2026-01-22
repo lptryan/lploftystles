@@ -346,7 +346,9 @@ footer.md-footer.layout3.inner.inner {
 }
 
 /* Navigation Menu - Luxury Styling */
-.head-menu .menu-item a {
+.head-menu .menu-item a,
+.nav-container .head-account .item-regist,
+.nav-container .head-account .item-login {
     font-family: "Cinzel", serif !important;
     font-weight: 800 !important;
     text-transform: uppercase;
@@ -366,13 +368,17 @@ footer.md-footer.layout3.inner.inner {
 
 /* Gold Underline for Active and Hover */
 .head-menu .menu-item.active a,
-.head-menu .menu-item a:hover {
+.head-menu .menu-item a:hover,
+.nav-container .head-account .item-regist:hover,
+.nav-container .head-account .item-login:hover {
     border-bottom: 2px solid #FFBF00 !important;
     padding-bottom: 2px;
 }
 
 /* Hover Glow Effect */
-.head-menu .menu-item a:hover {
+.head-menu .menu-item a:hover,
+.nav-container .head-account .item-regist:hover,
+.nav-container .head-account .item-login:hover {
     text-shadow: 0 0 10px rgba(212, 175, 55, 0.6) !important;
     transform: translateY(-2px);
     /* Slight lift */
