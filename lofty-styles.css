@@ -238,3 +238,19 @@ footer.md-footer.layout3.inner.inner {
     transform: none !important;
     box-shadow: none !important;
 }
+
+/* Form input text color */
+.md-form.layout7 .form-left .info-form2 .basic-info .basic-info-input input {
+    color: #fafafa;
+}
+
+/* Agent info text color */
+.md-form.layout7 .form-right .agent-info .info-item {
+    color: #FFFFFF !important;
+}
+
+/* Agent info link style */
+.info-item a {
+    color: #FFFFFF !important;
+    text-decoration: underline !important;
+}
