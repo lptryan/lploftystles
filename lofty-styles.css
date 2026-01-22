@@ -537,184 +537,185 @@ div#layout11-title {
     text-shadow: 0 0 10px rgba(212, 175, 55, 0.6) !important;
     transform: translateY(-2px);
     /* Slight lift */
-}/ *   = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  
-       P A R T N E R S   P A G E   S T Y L I N G   ( / m o r t g a g e - l e n d e r / p a r t n e r s )  
-       = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =   * /  
-  
- / *   1 .   M a i n   C o n t a i n e r   B a c k g r o u n d   * /  
- . m d - v e n d o r   {  
-         b a c k g r o u n d - c o l o r :   # 0 9 1 0 1 0   ! i m p o r t a n t ;  
-         p o s i t i o n :   r e l a t i v e ;  
-         z - i n d e x :   1 ;  
- }  
-  
- / *   R e m o v e   d e f a u l t   w h i t e   o v e r l a y   m a s k   s o   d a r k   b a c k g r o u n d   s h o w s   * /  
- . m d - v e n d o r   . i m g - m a s k ,  
- . m d - v e n d o r   . v e n d o r - i m g - m a s k   {  
-         b a c k g r o u n d - c o l o r :   t r a n s p a r e n t   ! i m p o r t a n t ;  
-         o p a c i t y :   0   ! i m p o r t a n t ;  
- }  
-  
- / *   2 .   T y p o g r a p h y   -   W h i t e   T e x t   &   F o n t s   * /  
- . m d - v e n d o r   h 1 ,  
- . m d - v e n d o r   h 2 ,  
- . m d - v e n d o r   h 3 ,  
- . m d - v e n d o r   h 4 ,  
- . m d - v e n d o r   h 5 ,  
- . m d - v e n d o r   h 6 ,  
- . m d - v e n d o r   p ,  
- . m d - v e n d o r   s p a n ,  
- . m d - v e n d o r   d i v   {  
-         c o l o r :   # f f f f f f   ! i m p o r t a n t ;  
- }  
-  
- . m d - v e n d o r   h 2   {  
-         f o n t - f a m i l y :   " C i n z e l " ,   s e r i f   ! i m p o r t a n t ;  
-         t e x t - t r a n s f o r m :   u p p e r c a s e ;  
-         / *   A p p l y   s t a n d a r d   g o l d   g r a d i e n t   t o   h e a d e r s   i f   d e s i r e d ,   o r   k e e p   w h i t e .    
-               U s e r   s a i d   " w h i t e   t e x t " ,   b u t   h e a d e r s   u s u a l l y   g e t   t h e   g o l d   t r e a t m e n t   i n   t h i s   t h e m e .  
-               I ' l l   k e e p   t h e m   w h i t e   f o r   n o w   p e r   s p e c i f i c   r e q u e s t ,   o r   s t a n d a r d   g o l d   i f   i t ' s   a   " t i t l e " .  
-               L e t ' s   s t i c k   t o   t h e   g o l d   g r a d i e n t   f o r   H 2   a s   i t   i s   c o n s i s t e n t   w i t h   t h e   r e s t   o f   t h e   s i t e   * /  
-         b a c k g r o u n d :   l i n e a r - g r a d i e n t ( 1 8 0 d e g ,  
-                         h s l ( 4 5   1 0 0 %   7 0 % ) ,  
-                         h s l ( 4 5   1 0 0 %   5 0 % ) ,  
-                         h s l ( 3 5   8 0 %   4 0 % ) )   ! i m p o r t a n t ;  
-         - w e b k i t - b a c k g r o u n d - c l i p :   t e x t   ! i m p o r t a n t ;  
-         - w e b k i t - t e x t - f i l l - c o l o r :   t r a n s p a r e n t   ! i m p o r t a n t ;  
-         b a c k g r o u n d - c l i p :   t e x t   ! i m p o r t a n t ;  
- }  
-  
- / *   D e s c r i p t i o n s   * /  
- . m d - v e n d o r   . l a y o u t 1 - d e s c   p ,  
- . m d - v e n d o r   . d e s c   {  
-         f o n t - f a m i l y :   " M o n t s e r r a t " ,   s a n s - s e r i f   ! i m p o r t a n t ;  
-         c o l o r :   # f a f a f a   ! i m p o r t a n t ;  
- }  
-  
- / *   3 .   C a t e g o r i e s   /   T a b s   * /  
- . v e n d o r - t a b - c o m p   l i   {  
-         f o n t - f a m i l y :   " C i n z e l " ,   s e r i f   ! i m p o r t a n t ;  
-         c o l o r :   # f a f a f a   ! i m p o r t a n t ;  
-         f o n t - w e i g h t :   7 0 0   ! i m p o r t a n t ;  
-         b a c k g r o u n d :   t r a n s p a r e n t   ! i m p o r t a n t ;  
-         b o r d e r :   1 p x   s o l i d   r g b a ( 2 5 5 ,   2 5 5 ,   2 5 5 ,   0 . 2 )   ! i m p o r t a n t ;  
-         m a r g i n - r i g h t :   1 0 p x   ! i m p o r t a n t ;  
-         b o r d e r - r a d i u s :   4 p x   ! i m p o r t a n t ;  
-         t r a n s i t i o n :   a l l   0 . 3 s   e a s e   ! i m p o r t a n t ;  
- }  
-  
- / *   A c t i v e   C a t e g o r y / T a b   * /  
- . v e n d o r - t a b - c o m p   l i . a c t i v e ,  
- . v e n d o r - t a b - c o m p   l i : h o v e r   {  
-         c o l o r :   # F F D 7 0 0   ! i m p o r t a n t ;  
-         / *   G o l d   t e x t   * /  
-         b o r d e r - c o l o r :   # F F D 7 0 0   ! i m p o r t a n t ;  
-         / *   G o l d   b o r d e r   * /  
-         b a c k g r o u n d :   r g b a ( 2 5 5 ,   2 1 5 ,   0 ,   0 . 1 )   ! i m p o r t a n t ;  
-         / *   S u b t l e   g o l d   t i n t   * /  
-         b o x - s h a d o w :   0   0   1 0 p x   r g b a ( 2 5 5 ,   2 1 5 ,   0 ,   0 . 2 )   ! i m p o r t a n t ;  
- }  
-  
- / *   4 .   I n p u t s   ( S e a r c h   &   F o r m )   * /  
- / *   " G o l d   t e x t ,   u n t i l   t h e   u s e r   t y p e s . . .   t h e n   # f a f a f a ,   a n d   w h i t e   o u t l i n e "   * /  
-  
- . m d - v e n d o r   i n p u t ,  
- . m d - v e n d o r   t e x t a r e a ,  
- . v e n d o r - i n p u t - c o m p   i n p u t   {  
-         b a c k g r o u n d - c o l o r :   t r a n s p a r e n t   ! i m p o r t a n t ;  
-         b o r d e r :   1 p x   s o l i d   # f f f f f f   ! i m p o r t a n t ;  
-         / *   W h i t e   o u t l i n e   * /  
-         c o l o r :   # f a f a f a   ! i m p o r t a n t ;  
-         / *   T y p e d   t e x t   i s   w h i t e   * /  
-         f o n t - f a m i l y :   " M o n t s e r r a t " ,   s a n s - s e r i f   ! i m p o r t a n t ;  
-         b o r d e r - r a d i u s :   4 p x   ! i m p o r t a n t ;  
-         p a d d i n g :   1 0 p x   ! i m p o r t a n t ;  
- }  
-  
- / *   P l a c e h o l d e r   -   G o l d   * /  
- . m d - v e n d o r   i n p u t : : p l a c e h o l d e r ,  
- . m d - v e n d o r   t e x t a r e a : : p l a c e h o l d e r ,  
- . v e n d o r - i n p u t - c o m p   i n p u t : : p l a c e h o l d e r   {  
-         c o l o r :   h s l ( 4 5 ,   1 0 0 %   5 0 % )   ! i m p o r t a n t ;  
-         o p a c i t y :   1   ! i m p o r t a n t ;  
- }  
-  
- / *   F o c u s   S t a t e   -   G o l d   G l o w   * /  
- . m d - v e n d o r   i n p u t : f o c u s ,  
- . m d - v e n d o r   t e x t a r e a : f o c u s ,  
- . v e n d o r - i n p u t - c o m p   i n p u t : f o c u s   {  
-         b o r d e r - c o l o r :   h s l ( 4 5 ,   1 0 0 %   5 0 % )   ! i m p o r t a n t ;  
-         b o x - s h a d o w :   0   0   8 p x   r g b a ( 2 5 5 ,   2 1 5 ,   0 ,   0 . 3 )   ! i m p o r t a n t ;  
-         o u t l i n e :   n o n e   ! i m p o r t a n t ;  
- }  
-  
- / *   5 .   I c o n s   ( S e a r c h   I c o n )   * /  
- . v e n d o r - i n p u t - c o m p   . i c o n f o n t ,  
- . v e n d o r - i n p u t - c o m p   i   {  
-         c o l o r :   h s l ( 4 5 ,   1 0 0 %   5 0 % )   ! i m p o r t a n t ;  
-         / *   G o l d   i c o n   * /  
-         f o n t - w e i g h t :   b o l d   ! i m p o r t a n t ;  
- }  
-  
- / *   6 .   P a r t n e r   L i s t   I t e m s   * /  
- . v e n d o r - g e n e r a l - b a s e   . i t e m ,  
- . v e n d o r - l i s t   . i t e m   {  
-         b a c k g r o u n d :   r g b a ( 1 5 ,   1 5 ,   1 6 ,   0 . 8 )   ! i m p o r t a n t ;  
-         / *   O n y x   t r a n s p a r e n t   * /  
-         b o r d e r :   1 p x   s o l i d   r g b a ( 2 5 5 ,   2 5 5 ,   2 5 5 ,   0 . 1 )   ! i m p o r t a n t ;  
-         m a r g i n - b o t t o m :   2 0 p x   ! i m p o r t a n t ;  
- }  
-  
- . v e n d o r - g e n e r a l - b a s e   . i t e m   . t i t l e ,  
- . v e n d o r - l i s t   . i t e m   . t i t l e   {  
-         c o l o r :   # F F D 7 0 0   ! i m p o r t a n t ;  
-         / *   G o l d   t i t l e   * /  
-         f o n t - f a m i l y :   " C i n z e l " ,   s e r i f   ! i m p o r t a n t ;  
- }  
-  
- / *   7 .   B u t t o n s   ( S u b m i t   &   L i s t   I t e m   B u t t o n s )   * /  
- / *   R e - u s i n g   t h e   l u x u r y   b u t t o n   s t y l e s   * /  
- . m d - v e n d o r   . s u b m i t ,  
- . m d - v e n d o r   b u t t o n ,  
- . m d - v e n d o r   . b t n ,  
- . v e n d o r - g e n e r a l - b a s e   . i t e m   a . b t n ,  
- . v e n d o r - g e n e r a l - b a s e   . i t e m   b u t t o n   {  
-         f o n t - f a m i l y :   " C i n z e l " ,   s e r i f   ! i m p o r t a n t ;  
-         c o l o r :   # f f f f f f   ! i m p o r t a n t ;  
-         f o n t - w e i g h t :   7 0 0   ! i m p o r t a n t ;  
-         t e x t - t r a n s f o r m :   u p p e r c a s e ;  
-  
-         / *   L u x u r y   B a c k g r o u n d   * /  
-         b a c k g r o u n d :  
-                 l i n e a r - g r a d i e n t ( # 0 f 0 f 1 0 ,   # 0 f 0 f 1 0 )   p a d d i n g - b o x ,  
-                 l i n e a r - g r a d i e n t ( 1 8 0 d e g ,  
-                         h s l ( 4 5   1 0 0 %   7 0 % ) ,  
-                         h s l ( 4 5   1 0 0 %   5 0 % ) ,  
-                         h s l ( 3 5   8 0 %   4 0 % ) )   b o r d e r - b o x   ! i m p o r t a n t ;  
-  
-         b o r d e r :   2 p x   s o l i d   t r a n s p a r e n t   ! i m p o r t a n t ;  
-         b o r d e r - r a d i u s :   6 p x   ! i m p o r t a n t ;  
-         b o x - s h a d o w :   0   4 p x   1 5 p x   r g b a ( 0 ,   0 ,   0 ,   0 . 3 )   ! i m p o r t a n t ;  
-         t r a n s i t i o n :   a l l   0 . 3 s   e a s e   ! i m p o r t a n t ;  
-  
-         / *   E n s u r e   f l e x   c e n t e r i n g   * /  
-         d i s p l a y :   i n l i n e - f l e x   ! i m p o r t a n t ;  
-         a l i g n - i t e m s :   c e n t e r   ! i m p o r t a n t ;  
-         j u s t i f y - c o n t e n t :   c e n t e r   ! i m p o r t a n t ;  
-         m i n - h e i g h t :   4 8 p x   ! i m p o r t a n t ;  
-         p a d d i n g :   0   2 4 p x   ! i m p o r t a n t ;  
- }  
-  
- / *   B u t t o n   H o v e r   * /  
- . m d - v e n d o r   . s u b m i t : h o v e r ,  
- . m d - v e n d o r   b u t t o n : h o v e r ,  
- . m d - v e n d o r   . b t n : h o v e r ,  
- . v e n d o r - g e n e r a l - b a s e   . i t e m   a . b t n : h o v e r ,  
- . v e n d o r - g e n e r a l - b a s e   . i t e m   b u t t o n : h o v e r   {  
-         t r a n s f o r m :   t r a n s l a t e Y ( - 2 p x ) ;  
-         b o x - s h a d o w :  
-                 0   0   6 p x   r g b a ( 2 5 5 ,   2 1 5 ,   1 3 0 ,   0 . 4 5 ) ,  
-                 0   0   1 2 p x   r g b a ( 2 5 5 ,   2 0 0 ,   9 0 ,   0 . 3 5 )   ! i m p o r t a n t ;  
-         c o l o r :   # f f f f f f   ! i m p o r t a n t ;  
- }  
- 
+}
+
+/* =========================================
+   PARTNERS PAGE STYLING (/mortgage-lender/partners)
+   ========================================= */
+
+/* 1. Main Container Background */
+.md-vendor {
+    background-color: #091010 !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Remove default white overlay mask so dark background shows */
+.md-vendor .img-mask,
+.md-vendor .vendor-img-mask {
+    background-color: transparent !important;
+    opacity: 0 !important;
+}
+
+/* 2. Typography - White Text & Fonts */
+.md-vendor h1,
+.md-vendor h2,
+.md-vendor h3,
+.md-vendor h4,
+.md-vendor h5,
+.md-vendor h6,
+.md-vendor p,
+.md-vendor span,
+.md-vendor div {
+    color: #ffffff !important;
+}
+
+.md-vendor h2 {
+    font-family: "Cinzel", serif !important;
+    text-transform: uppercase;
+    /* Apply standard gold gradient to headers if desired, or keep white. 
+       User said "white text", but headers usually get the gold treatment in this theme.
+       I'll keep them white for now per specific request, or standard gold if it's a "title".
+       Let's stick to the gold gradient for H2 as it is consistent with the rest of the site */
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Descriptions */
+.md-vendor .layout1-desc p,
+.md-vendor .desc {
+    font-family: "Montserrat", sans-serif !important;
+    color: #fafafa !important;
+}
+
+/* 3. Categories / Tabs */
+.vendor-tab-comp li {
+    font-family: "Cinzel", serif !important;
+    color: #fafafa !important;
+    font-weight: 700 !important;
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    margin-right: 10px !important;
+    border-radius: 4px !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Active Category/Tab */
+.vendor-tab-comp li.active,
+.vendor-tab-comp li:hover {
+    color: #FFD700 !important;
+    /* Gold text */
+    border-color: #FFD700 !important;
+    /* Gold border */
+    background: rgba(255, 215, 0, 0.1) !important;
+    /* Subtle gold tint */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.2) !important;
+}
+
+/* 4. Inputs (Search & Form) */
+/* "Gold text, until the user types... then #fafafa, and white outline" */
+
+.md-vendor input,
+.md-vendor textarea,
+.vendor-input-comp input {
+    background-color: transparent !important;
+    border: 1px solid #ffffff !important;
+    /* White outline */
+    color: #fafafa !important;
+    /* Typed text is white */
+    font-family: "Montserrat", sans-serif !important;
+    border-radius: 4px !important;
+    padding: 10px !important;
+}
+
+/* Placeholder - Gold */
+.md-vendor input::placeholder,
+.md-vendor textarea::placeholder,
+.vendor-input-comp input::placeholder {
+    color: hsl(45, 100% 50%) !important;
+    opacity: 1 !important;
+}
+
+/* Focus State - Gold Glow */
+.md-vendor input:focus,
+.md-vendor textarea:focus,
+.vendor-input-comp input:focus {
+    border-color: hsl(45, 100% 50%) !important;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.3) !important;
+    outline: none !important;
+}
+
+/* 5. Icons (Search Icon) */
+.vendor-input-comp .iconfont,
+.vendor-input-comp i {
+    color: hsl(45, 100% 50%) !important;
+    /* Gold icon */
+    font-weight: bold !important;
+}
+
+/* 6. Partner List Items */
+.vendor-general-base .item,
+.vendor-list .item {
+    background: rgba(15, 15, 16, 0.8) !important;
+    /* Onyx transparent */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    margin-bottom: 20px !important;
+}
+
+.vendor-general-base .item .title,
+.vendor-list .item .title {
+    color: #FFD700 !important;
+    /* Gold title */
+    font-family: "Cinzel", serif !important;
+}
+
+/* 7. Buttons (Submit & List Item Buttons) */
+/* Re-using the luxury button styles */
+.md-vendor .submit,
+.md-vendor button,
+.md-vendor .btn,
+.vendor-general-base .item a.btn,
+.vendor-general-base .item button {
+    font-family: "Cinzel", serif !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+
+    /* Luxury Background */
+    background:
+        linear-gradient(#0f0f10, #0f0f10) padding-box,
+        linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) border-box !important;
+
+    border: 2px solid transparent !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.3s ease !important;
+
+    /* Ensure flex centering */
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 48px !important;
+    padding: 0 24px !important;
+}
+
+/* Button Hover */
+.md-vendor .submit:hover,
+.md-vendor button:hover,
+.md-vendor .btn:hover,
+.vendor-general-base .item a.btn:hover,
+.vendor-general-base .item button:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 0 6px rgba(255, 215, 130, 0.45),
+        0 0 12px rgba(255, 200, 90, 0.35) !important;
+    color: #ffffff !important;
+}
