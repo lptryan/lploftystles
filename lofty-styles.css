@@ -1,0 +1,154 @@
+/* Import fonts if not already in your project */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;500&display=swap');
+
+/* Fancy Gold Headings with Hover Shimmer */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Cinzel", serif;
+    background: linear-gradient(
+        180deg,
+        hsl(45 100% 70%),
+        hsl(45 100% 50%),
+        hsl(35 80% 40%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background-size: 200% 100%;
+}
+
+/* Shimmer effect on hover */
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    animation: shimmer 1.4s ease-in-out forwards;
+}
+
+/* Shimmer keyframes */
+@keyframes shimmer {
+    0% {
+        background-position: -150%;
+    }
+    50% {
+        background-position: 150%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+/* Gold‑trimmed button with onyx background + white text + soft gold glow */
+.banner-button-v2 .btn-item.plain {
+    font-family: "Cinzel", serif;
+
+    /* Text color */
+    color: #ffffff;
+
+    /* Onyx background + gold border */
+    background:
+        linear-gradient(#0f0f10, #0f0f10) padding-box,
+        linear-gradient(
+            180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)
+        ) border-box;
+
+    border: 2px solid transparent;
+    border-radius: 6px;
+
+    /* Shimmer setup */
+    background-size: 200% 100%;
+    transition:
+        background-position 0.6s ease,
+        box-shadow 0.4s ease,
+        color 0.3s ease;
+}
+
+/* Shimmer + soft gold glow on hover */
+.banner-button-v2 .btn-item.plain:hover {
+    background-position: 150% 0;
+
+    /* Soft gold glow */
+    box-shadow:
+        0 0 6px rgba(255, 215, 130, 0.45),
+        0 0 12px rgba(255, 200, 90, 0.35),
+        0 0 18px rgba(255, 180, 60, 0.25);
+}
+
+.header-bg {
+    background-color: #000000 !important;
+}
+
+/* background for form*/
+.md-form.layout7 .form-left {
+    background: #091010 !important;
+}
+.md-form.layout7 .form-right {
+    background: #091010 !important;
+}
+.content {
+    background-color:  #091010 !important;
+}
+
+footer {
+    background-color: #000000 !important;
+}
+
+footer.md-footer.layout3.inner.inner {
+    background-color: #000000 !important;
+}
+
+.site-subtitle{
+    color:#FAFAFA;
+    font-family: Montserrat;
+}
+
+.item-text {
+    /* Luxury Gold Gradient matching your button's border colors */
+    background: linear-gradient(
+        180deg,
+        hsl(45, 100%, 70%) 0%,   /* Light Gold */
+        hsl(45, 100%, 50%) 50%,  /* True Gold */
+        hsl(35, 80%, 40%) 100%   /* Deep Gold/Bronze */ 
+    ) !important;
+    padding: 20px;
+    border-radius: 8px; /* Slightly more rounded than the button for a softer card feel */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    min-height: 120px; /* Optional: keeps all items uniform if you have a grid */
+}
+
+.item-title {
+    font-family: "Cinzel", serif !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+
+    /* Onyx to Black Gradient */
+    background: linear-gradient(180deg, #353839 0%, #0f0f10 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Fallback for older browsers */
+    color: #0f0f10; 
+}
+
+.item-desc {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1rem;
+
+    /* Onyx to Black Gradient */
+    background: linear-gradient(180deg, #353839 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Fallback */
+    color: #353839;
+}
