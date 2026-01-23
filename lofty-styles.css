@@ -718,169 +718,168 @@ div#layout11-title {
         0 0 6px rgba(255, 215, 130, 0.45),
         0 0 12px rgba(255, 200, 90, 0.35) !important;
     color: #ffffff !important;
-}/ *   = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  
-       P A R T N E R S   P A G E   F I X E S   ( B a c k g r o u n d   O v e r r i d e s )  
-       = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =   * /  
-  
- / *   1 .   K i l l   t h e   p e r s i s t e n t   b a c k g r o u n d   i m a g e   o n   t h e   m a i n   v e n d o r   s e c t i o n   * /  
- . m d - v e n d o r . m g - b g ,  
- . m g - b g   {  
-         b a c k g r o u n d - i m a g e :   n o n e   ! i m p o r t a n t ;  
-         b a c k g r o u n d - c o l o r :   # 0 9 1 0 1 0   ! i m p o r t a n t ;  
- }  
-  
- / *   2 .   O v e r r i d e   t h e   h a r d c o d e d   w h i t e   b a c k g r o u n d s   o n   m a i n   c o n t a i n e r s   * /  
- m a i n ,  
- . p a g e - c o n t e n t ,  
- . m d - f o r m ,  
- . m d - f o r m . m g - b g   {  
-         b a c k g r o u n d - c o l o r :   # 0 9 1 0 1 0   ! i m p o r t a n t ;  
-         b a c k g r o u n d - i m a g e :   n o n e   ! i m p o r t a n t ;  
- }  
-  
- / *   3 .   R e m o v e   t h e   g r a d i e n t   o v e r l a y   i n   t h e   h e a d e r   i f   i t   c o n f l i c t s   * /  
- . h e a d e r - b g   {  
-         b a c k g r o u n d :   t r a n s p a r e n t   ! i m p o r t a n t ;  
-         b a c k g r o u n d - i m a g e :   n o n e   ! i m p o r t a n t ;  
- }  
-  
- / *   4 .   E n s u r e   t h e   b o d y   b a c k g r o u n d   i s   a l s o   d a r k   a s   a   f a l l b a c k   * /  
- b o d y   {  
-         b a c k g r o u n d - c o l o r :   # 0 9 1 0 1 0   ! i m p o r t a n t ;  
- }  
- / *   = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  
-       P A R T N E R S   P A G E   F I X E S   V 2   ( D e f i n i t e   O v e r r i d e s )  
-       = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =   * /  
-  
- / *   1 .   B a c k g r o u n d   f i x   -   T a r g e t   t h e   s p e c i f i c   c o m b o   * /  
- d i v . m d - v e n d o r . m g - b g ,  
- d i v . m d - v e n d o r . l a y o u t 1 . m g - b g ,  
- . m g - b g   {  
-         b a c k g r o u n d - i m a g e :   n o n e   ! i m p o r t a n t ;  
-         b a c k g r o u n d - c o l o r :   # 0 9 1 0 1 0   ! i m p o r t a n t ;  
- }  
-  
- / *   O v e r r i d e   a n y   w h i t e   b a c k g r o u n d s   o n   m a i n   c o n t a i n e r s   * /  
- m a i n ,  
- . p a g e - c o n t e n t ,  
- . m d - f o r m ,  
- . m d - f o r m . m g - b g   {  
-         b a c k g r o u n d - c o l o r :   # 0 9 1 0 1 0   ! i m p o r t a n t ;  
-         b a c k g r o u n d - i m a g e :   n o n e   ! i m p o r t a n t ;  
- }  
-  
- / *   E n s u r e   t h e   b o d y   i s   d a r k   * /  
- b o d y ,  
- b o d y . m o r t g a g e - l e n d e r   {  
-         b a c k g r o u n d - c o l o r :   # 0 9 1 0 1 0   ! i m p o r t a n t ;  
- }  
-  
- / *   2 .   S e a r c h   B u t t o n   S t y l i n g   ( T r a n s f o r m i n g   t h e   I c o n )   * /  
- / *   O n   p a r t n e r s   p a g e :   . v e n d o r - i n p u t - c o m p   . i c o n f o n t   * /  
-  
- . v e n d o r - i n p u t - c o m p   {  
-         p o s i t i o n :   r e l a t i v e ;  
-         d i s p l a y :   f l e x ;  
-         a l i g n - i t e m s :   c e n t e r ;  
- }  
-  
- / *   I n p u t   f i e l d   r e f i n e m e n t s   * /  
- . v e n d o r - i n p u t - c o m p   i n p u t   {  
-         b a c k g r o u n d :   t r a n s p a r e n t   ! i m p o r t a n t ;  
-         b o r d e r :   1 p x   s o l i d   # f f f f f f   ! i m p o r t a n t ;  
-         c o l o r :   # f a f a f a   ! i m p o r t a n t ;  
-         b o r d e r - r a d i u s :   4 p x   ! i m p o r t a n t ;  
-         p a d d i n g - r i g h t :   6 0 p x   ! i m p o r t a n t ;  
-         / *   S p a c e   f o r   t h e   b u t t o n   * /  
-         f o n t - f a m i l y :   " M o n t s e r r a t " ,   s a n s - s e r i f   ! i m p o r t a n t ;  
- }  
-  
- . v e n d o r - i n p u t - c o m p   i n p u t : f o c u s   {  
-         b o r d e r - c o l o r :   # F F D 7 0 0   ! i m p o r t a n t ;  
-         b o x - s h a d o w :   0   0   1 0 p x   r g b a ( 2 1 2 ,   1 7 5 ,   5 5 ,   0 . 3 )   ! i m p o r t a n t ;  
-         o u t l i n e :   n o n e   ! i m p o r t a n t ;  
- }  
-  
- / *   T h e   S e a r c h   I c o n   - >   B u t t o n   T r a n s f o r m a t i o n   * /  
- . v e n d o r - i n p u t - c o m p   . i c o n f o n t . i c o n - s e a r c h - b o l d   {  
-         / *   P o s i t i o n   i t   l i k e   a   b u t t o n   * /  
-         p o s i t i o n :   a b s o l u t e   ! i m p o r t a n t ;  
-         r i g h t :   5 p x   ! i m p o r t a n t ;  
-         t o p :   5 0 %   ! i m p o r t a n t ;  
-         t r a n s f o r m :   t r a n s l a t e Y ( - 5 0 % )   ! i m p o r t a n t ;  
-  
-         / *   B o x   M o d e l   * /  
-         w i d t h :   4 8 p x   ! i m p o r t a n t ;  
-         h e i g h t :   4 0 p x   ! i m p o r t a n t ;  
-         d i s p l a y :   f l e x   ! i m p o r t a n t ;  
-         a l i g n - i t e m s :   c e n t e r   ! i m p o r t a n t ;  
-         j u s t i f y - c o n t e n t :   c e n t e r   ! i m p o r t a n t ;  
-  
-         / *   L u x u r y   B u t t o n   S t y l i n g   ( M a t c h i n g   . s e a r c h - b u t t o n )   * /  
-         b a c k g r o u n d :  
-                 l i n e a r - g r a d i e n t ( # 0 f 0 f 1 0 ,   # 0 f 0 f 1 0 )   p a d d i n g - b o x ,  
-                 l i n e a r - g r a d i e n t ( 1 8 0 d e g ,   h s l ( 4 5   1 0 0 %   7 0 % ) ,   h s l ( 4 5   1 0 0 %   5 0 % ) ,   h s l ( 3 5   8 0 %   4 0 % ) )   b o r d e r - b o x   ! i m p o r t a n t ;  
-         b o r d e r :   2 p x   s o l i d   t r a n s p a r e n t   ! i m p o r t a n t ;  
-         b o r d e r - r a d i u s :   4 p x   ! i m p o r t a n t ;  
-  
-         / *   I c o n   C o l o r   * /  
-         c o l o r :   # f f f f f f   ! i m p o r t a n t ;  
-         f o n t - s i z e :   2 0 p x   ! i m p o r t a n t ;  
-         f o n t - w e i g h t :   b o l d   ! i m p o r t a n t ;  
-         c u r s o r :   p o i n t e r   ! i m p o r t a n t ;  
-  
-         / *   S h a d o w   &   T r a n s i t i o n   * /  
-         b o x - s h a d o w :   0   0   1 0 p x   r g b a ( 2 1 2 ,   1 7 5 ,   5 5 ,   0 . 3 )   ! i m p o r t a n t ;  
-         t r a n s i t i o n :   a l l   0 . 3 s   e a s e   ! i m p o r t a n t ;  
- }  
-  
- . v e n d o r - i n p u t - c o m p   . i c o n f o n t . i c o n - s e a r c h - b o l d : h o v e r   {  
-         b o x - s h a d o w :   0   0   2 0 p x   r g b a ( 2 1 2 ,   1 7 5 ,   5 5 ,   0 . 6 )   ! i m p o r t a n t ;  
-         t r a n s f o r m :   t r a n s l a t e Y ( - 5 0 % )   s c a l e ( 1 . 0 5 )   ! i m p o r t a n t ;  
-         / *   K e e p   c e n t e r i n g   +   l o o s e   s c a l e   * /  
-         c o l o r :   # F F D 7 0 0   ! i m p o r t a n t ;  
- }  
-  
- / *   3 .   C a t e g o r y   &   L i s t   B u t t o n s   * /  
- . v e n d o r - t a b - c o m p   l i   {  
-         f o n t - f a m i l y :   " C i n z e l " ,   s e r i f   ! i m p o r t a n t ;  
-         f o n t - w e i g h t :   7 0 0   ! i m p o r t a n t ;  
-         c o l o r :   # f a f a f a   ! i m p o r t a n t ;  
-         b o r d e r :   1 p x   s o l i d   r g b a ( 2 5 5 ,   2 5 5 ,   2 5 5 ,   0 . 3 )   ! i m p o r t a n t ;  
- }  
-  
- . v e n d o r - t a b - c o m p   l i . a c t i v e ,  
- . v e n d o r - t a b - c o m p   l i : h o v e r   {  
-         c o l o r :   # 0 f 0 f 1 0   ! i m p o r t a n t ;  
-         b a c k g r o u n d :   l i n e a r - g r a d i e n t ( 1 8 0 d e g ,   h s l ( 4 5   1 0 0 %   7 0 % ) ,   h s l ( 4 5   1 0 0 %   5 0 % ) )   ! i m p o r t a n t ;  
-         b o r d e r - c o l o r :   t r a n s p a r e n t   ! i m p o r t a n t ;  
-         t e x t - s h a d o w :   n o n e   ! i m p o r t a n t ;  
-         b o x - s h a d o w :   0   0   1 0 p x   r g b a ( 2 1 2 ,   1 7 5 ,   5 5 ,   0 . 5 )   ! i m p o r t a n t ;  
- }  
- / *   = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  
-       S E L L   P R O C E S S   B R O K E R   S E C T I O N   S t y l i n g  
-       = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =   * /  
-  
- . m d - s e l l - p r o c e s s . b r o k e r   {  
-         b a c k g r o u n d - c o l o r :   # 0 9 1 0 1 0   ! i m p o r t a n t ;  
-         m a r g i n - b o t t o m :   0 p x   ! i m p o r t a n t ;  
-         p a d d i n g - b o t t o m :   3 0 p x ;  
-         p a d d i n g - t o p :   3 0 p x   ! i m p o r t a n t ;  
- }  
-  
- / *   G o l d   G r a d i e n t   f o r   P r o c e s s   T e x t   a n d   I c o n s   * /  
- . p r o c e s s - t e x t ,  
- . m d - s e l l - p r o c e s s . b r o k e r   . p r o c e s s - b o x   . p r o c e s s - i t e m   . p r o c e s s - i c o n   . i c o n f o n t   {  
-         b a c k g r o u n d :   l i n e a r - g r a d i e n t ( 1 8 0 d e g ,  
-                         h s l ( 4 5   1 0 0 %   7 0 % ) ,  
-                         h s l ( 4 5   1 0 0 %   5 0 % ) ,  
-                         h s l ( 3 5   8 0 %   4 0 % ) )   ! i m p o r t a n t ;  
-         - w e b k i t - b a c k g r o u n d - c l i p :   t e x t   ! i m p o r t a n t ;  
-         - w e b k i t - t e x t - f i l l - c o l o r :   t r a n s p a r e n t   ! i m p o r t a n t ;  
-         b a c k g r o u n d - c l i p :   t e x t   ! i m p o r t a n t ;  
-         c o l o r :   t r a n s p a r e n t   ! i m p o r t a n t ;  
-  
-         / *   E n s u r e   g r a d i e n t   w o r k s   o n   i c o n s / t e x t   * /  
-         d i s p l a y :   i n l i n e - b l o c k   ! i m p o r t a n t ;  
- }  
- 
+}/* =========================================
+   PARTNERS PAGE FIXES (Background Overrides)
+   ========================================= */
+
+/* 1. Kill the persistent background image on the main vendor section */
+.md-vendor.mg-bg,
+.mg-bg {
+    background-image: none !important;
+    background-color: #091010 !important;
+}
+
+/* 2. Override the hardcoded white backgrounds on main containers */
+main,
+.page-content,
+.md-form,
+.md-form.mg-bg {
+    background-color: #091010 !important;
+    background-image: none !important;
+}
+
+/* 3. Remove the gradient overlay in the header if it conflicts */
+.header-bg {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+/* 4. Ensure the body background is also dark as a fallback */
+body {
+    background-color: #091010 !important;
+}
+/* =========================================
+   PARTNERS PAGE FIXES V2 (Definite Overrides)
+   ========================================= */
+
+/* 1. Background fix - Target the specific combo */
+div.md-vendor.mg-bg,
+div.md-vendor.layout1.mg-bg,
+.mg-bg {
+    background-image: none !important;
+    background-color: #091010 !important;
+}
+
+/* Override any white backgrounds on main containers */
+main,
+.page-content,
+.md-form,
+.md-form.mg-bg {
+    background-color: #091010 !important;
+    background-image: none !important;
+}
+
+/* Ensure the body is dark */
+body,
+body.mortgage-lender {
+    background-color: #091010 !important;
+}
+
+/* 2. Search Button Styling (Transforming the Icon) */
+/* On partners page: .vendor-input-comp .iconfont */
+
+.vendor-input-comp {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Input field refinements */
+.vendor-input-comp input {
+    background: transparent !important;
+    border: 1px solid #ffffff !important;
+    color: #fafafa !important;
+    border-radius: 4px !important;
+    padding-right: 60px !important;
+    /* Space for the button */
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.vendor-input-comp input:focus {
+    border-color: #FFD700 !important;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3) !important;
+    outline: none !important;
+}
+
+/* The Search Icon -> Button Transformation */
+.vendor-input-comp .iconfont.icon-search-bold {
+    /* Position it like a button */
+    position: absolute !important;
+    right: 5px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+
+    /* Box Model */
+    width: 48px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    /* Luxury Button Styling (Matching .search-button) */
+    background:
+        linear-gradient(#0f0f10, #0f0f10) padding-box,
+        linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%)) border-box !important;
+    border: 2px solid transparent !important;
+    border-radius: 4px !important;
+
+    /* Icon Color */
+    color: #ffffff !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+
+    /* Shadow & Transition */
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3) !important;
+    transition: all 0.3s ease !important;
+}
+
+.vendor-input-comp .iconfont.icon-search-bold:hover {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6) !important;
+    transform: translateY(-50%) scale(1.05) !important;
+    /* Keep centering + loose scale */
+    color: #FFD700 !important;
+}
+
+/* 3. Category & List Buttons */
+.vendor-tab-comp li {
+    font-family: "Cinzel", serif !important;
+    font-weight: 700 !important;
+    color: #fafafa !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.vendor-tab-comp li.active,
+.vendor-tab-comp li:hover {
+    color: #0f0f10 !important;
+    background: linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%)) !important;
+    border-color: transparent !important;
+    text-shadow: none !important;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5) !important;
+}
+/* =========================================
+   SELL PROCESS BROKER SECTION Styling
+   ========================================= */
+
+.md-sell-process.broker {
+    background-color: #091010 !important;
+    margin-bottom: 0px !important;
+    padding-bottom: 30px;
+    padding-top: 30px !important;
+}
+
+/* Gold Gradient for Process Text and Icons */
+.process-text,
+.md-sell-process.broker .process-box .process-item .process-icon .iconfont {
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+
+    /* Ensure gradient works on icons/text */
+    display: inline-block !important;
+}
