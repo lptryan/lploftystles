@@ -1044,3 +1044,8 @@ header.md-header.layout2 {
     color: #FFD700 !important;
     text-shadow: 0 0 8px rgba(255, 191, 0, 0.5) !important;
 }
+
+/* Single Banner Background */
+.banner.single {
+    background-color: #000000 !important;
+}
