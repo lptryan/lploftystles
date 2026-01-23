@@ -949,3 +949,9 @@ header.md-header.layout2 {
     color: transparent !important;
     display: inline-block !important;
 }
+
+.md-content.two-column .list .item {
+    background-color: #000000 !important;
+    margin: 0 0 20px 0 !important;
+    padding: 0px !important;
+}
