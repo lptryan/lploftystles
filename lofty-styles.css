@@ -883,3 +883,5 @@ body.mortgage-lender {
     /* Ensure gradient works on icons/text */
     display: inline-block !important;
 }
+
+.process-icon { background-color: #000000 !important; }
