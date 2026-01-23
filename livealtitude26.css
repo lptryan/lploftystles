@@ -66,3 +66,15 @@ footer a,
     color: #ffffff !important;
     text-decoration: underline !important;
 }
+
+/* Main Menu Underlines - Color #ea8379 */
+.head-menu .menu-item.active a,
+.head-menu .menu-item a:hover,
+.nav-container .head-account .item-regist:hover,
+.nav-container .head-account .item-login:hover {
+    border-bottom: 2px solid #ea8379 !important;
+    padding-bottom: 2px;
+    /* Slight spacing */
+    text-decoration: none !important;
+    /* Remove standard underline if present */
+}
