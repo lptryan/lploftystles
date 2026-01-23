@@ -78,3 +78,57 @@ footer a,
     text-decoration: none !important;
     /* Remove standard underline if present */
 }
+
+/* Site Title & Subtitle */
+.site-title.left {
+    text-align: left !important;
+    color: #FAFAFA !important;
+}
+
+.site-subtitle.left p,
+.site-subtitle p {
+    color: #FAFAFA !important;
+    text-align: left !important;
+}
+
+/* Paragraph Fonts - Gotham */
+p,
+.site-p,
+.content p {
+    font-family: Gotham, 'Montserrat', sans-serif !important;
+}
+
+/* Buttons - Gradient Border #ea8379 + Charter Bold */
+.submit,
+.submit-btn,
+.search-button,
+.btn-search,
+.btn-item.plain,
+.md-form.layout7 .form-left .info-form2 .submit-content .submit,
+.info-form2 .submit-content .submit-box .submit,
+button.btn {
+    font-family: Charter, 'Bitstream Charter', serif !important;
+    font-weight: 700 !important;
+    color: #fafafa !important;
+
+    /* Gradient Border Technique */
+    background:
+        linear-gradient(#0f0f10, #0f0f10) padding-box,
+        linear-gradient(135deg, #ea8379, #f2a49b) border-box !important;
+
+    border: 2px solid transparent !important;
+    border-radius: 6px !important;
+
+    transition: all 0.3s ease !important;
+    cursor: pointer;
+}
+
+/* Button Hover - Slight Lift & Glow */
+.submit:hover,
+.submit-btn:hover,
+.search-button:hover,
+.btn-search:hover,
+button.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(234, 131, 121, 0.4) !important;
+}
