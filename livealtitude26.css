@@ -25,3 +25,44 @@
 .mg-bg {
     background-color: #00213a !important;
 }
+
+/* Global Headings Font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Charter, 'Bitstream Charter', serif !important;
+    font-weight: 700 !important;
+    /* Assuming bold as preferred from menu request, but can adjust */
+}
+
+/* Footer Styling */
+/* Background color */
+.md-footer,
+footer,
+.footer-container {
+    background-color: #00213a !important;
+}
+
+/* Footer Text - White */
+.md-footer,
+.md-footer p,
+.md-footer span,
+.md-footer li,
+.md-footer div,
+footer p,
+footer span,
+footer li,
+footer div {
+    color: #ffffff !important;
+}
+
+/* Footer Links - White & Underlined */
+.md-footer a,
+footer a,
+.footer-container a {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
