@@ -898,3 +898,9 @@ header.md-header.layout2 {
 .md-header.layout2 .header-container {
     background-color: #000000 !important;
 }
+
+/* Override for Richtext Layout 11 */
+.md-content:has(#richtext-layout11) {
+    background-image: none !important;
+    background-color: #091010 !important;
+}
