@@ -929,3 +929,9 @@ header.md-header.layout2 {
     margin-top: 0px;
     font-size: 1rem;
 }
+
+/* Site Paragraph Styling */
+.site-p {
+    color: #fafafa !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
