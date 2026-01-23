@@ -904,3 +904,21 @@ header.md-header.layout2 {
     background-image: none !important;
     background-color: #091010 !important;
 }
+
+/* Layout 6 Agent Info Styling */
+.layout6 .search-item .description .agent-name {
+    font-family: 'Cinzel', serif !important;
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+.layout6 .search-item .description .agent-position {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #fafafa !important;
+}
