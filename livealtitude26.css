@@ -38,6 +38,11 @@ h6 {
     /* Assuming bold as preferred from menu request, but can adjust */
 }
 
+/* Form Headers - Dark Blue */
+.md-form-container h2 {
+    color: #00213a !important;
+}
+
 /* Footer Styling */
 /* Background color */
 .md-footer,
@@ -98,7 +103,7 @@ p,
     font-family: Gotham, 'Montserrat', sans-serif !important;
 }
 
-/* Buttons - Gradient Border #ea8379 + Charter Bold */
+/* Buttons - Gradient Border #ea8379 + Charter Bold + Dark Blue Bg */
 .submit,
 .submit-btn,
 .search-button,
@@ -113,7 +118,8 @@ button.btn {
 
     /* Gradient Border Technique */
     background:
-        linear-gradient(#0f0f10, #0f0f10) padding-box,
+        linear-gradient(#0d213a, #0d213a) padding-box,
+        /* Updated to #0d213a */
         linear-gradient(135deg, #ea8379, #f2a49b) border-box !important;
 
     border: 2px solid transparent !important;
@@ -123,12 +129,13 @@ button.btn {
     cursor: pointer;
 }
 
-/* Button Hover - Slight Lift & Glow */
+/* Button Hover - Slight Lift & Glow (#ea8379) */
 .submit:hover,
 .submit-btn:hover,
 .search-button:hover,
 .btn-search:hover,
 button.btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(234, 131, 121, 0.4) !important;
+    box-shadow: 0 0 15px rgba(234, 131, 121, 0.6) !important;
+    /* Glow matching #ea8379 */
 }
