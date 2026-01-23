@@ -890,3 +890,11 @@ body.mortgage-lender {
 header.md-header.layout2 {
     background-color: #000000 !important;
 }
+
+.md-content.two-column {
+    background-color: #000000 !important;
+}
+
+.md-header.layout2 .header-container {
+    background-color: #000000 !important;
+}
