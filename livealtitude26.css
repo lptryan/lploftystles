@@ -20,3 +20,8 @@
     font-family: Charter, 'Bitstream Charter', serif !important;
     font-weight: 700 !important;
 }
+
+/* Background Color Test */
+.mg-bg {
+    background-color: #00213a !important;
+}
