@@ -955,3 +955,64 @@ header.md-header.layout2 {
     margin: 0 0 20px 0 !important;
     padding: 0px !important;
 }
+
+/* =========================================
+   COOKIE BANNER STYLING
+   ========================================= */
+
+/* Main Banner Container */
+.cookie-authority.ca .cookie-banner {
+    background-color: #091010 !important;
+    color: #fafafa !important;
+    border-top: 1px solid rgba(255, 215, 0, 0.2) !important;
+}
+
+/* Headings */
+.cookie-authority.ca .cookie-banner .head-title {
+    color: #fafafa !important;
+    font-family: 'Cinzel', serif !important;
+}
+
+/* Paragraphs */
+.cookie-authority.ca .cookie-banner p {
+    color: #fafafa !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Cookie Button - Luxury Style */
+.cookie-btn {
+    font-family: 'Cinzel', serif !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+
+    /* Luxury Background */
+    background:
+        linear-gradient(#0f0f10, #0f0f10) padding-box,
+        linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) border-box !important;
+
+    border: 2px solid transparent !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.3s ease !important;
+
+    /* Sizing */
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 48px !important;
+    padding: 0 24px !important;
+    cursor: pointer !important;
+}
+
+/* Cookie Button Hover */
+.cookie-btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 0 6px rgba(255, 215, 130, 0.45),
+        0 0 12px rgba(255, 200, 90, 0.35) !important;
+    color: #ffffff !important;
+}
