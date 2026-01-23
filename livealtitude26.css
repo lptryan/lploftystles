@@ -1,5 +1,22 @@
 /* LiveAltitude26 Styles */
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;800&family=Montserrat:wght@400;500&display=swap');
 
-/* Add your custom styles below */
+/* 
+   User applied font: Charter Bold for Menu 
+   Note: 'Charter' is a system font on many devices. 
+   We include a fallback stack.
+*/
+
+/* Navigation Menu Font */
+.head-menu .menu-item .title,
+.head-menu .menu-item a,
+.nav-container .head-account .item-regist,
+.nav-container .head-account .item-login {
+    font-family: Charter, 'Bitstream Charter', serif !important;
+    font-weight: 700 !important;
+}
+
+/* Ensure submenus also get it if needed */
+.head-menu .sub-menu .menu-item a {
+    font-family: Charter, 'Bitstream Charter', serif !important;
+    font-weight: 700 !important;
+}
