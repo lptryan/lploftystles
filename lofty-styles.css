@@ -885,3 +885,8 @@ body.mortgage-lender {
 }
 
 .process-icon { background-color: #000000 !important; }
+
+/* Global Black Header Override */
+header.md-header.layout2 {
+    background-color: #000000 !important;
+}
