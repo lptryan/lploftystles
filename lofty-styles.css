@@ -975,8 +975,16 @@ header.md-header.layout2 {
 
 /* Headings */
 .cookie-authority.ca .cookie-banner .head-title {
-    color: #fafafa !important;
     font-family: 'Cinzel', serif !important;
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+    display: inline-block !important;
 }
 
 /* Paragraphs */
