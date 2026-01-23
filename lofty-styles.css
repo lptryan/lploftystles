@@ -1016,3 +1016,15 @@ header.md-header.layout2 {
         0 0 12px rgba(255, 200, 90, 0.35) !important;
     color: #ffffff !important;
 }
+
+/* Cookie Banner Links */
+.cookie-authority.ca .cookie-banner a {
+    color: #FFBF00 !important;
+    text-decoration: underline !important;
+    font-weight: 600 !important;
+}
+
+.cookie-authority.ca .cookie-banner a:hover {
+    color: #FFD700 !important;
+    text-shadow: 0 0 8px rgba(255, 191, 0, 0.5) !important;
+}
