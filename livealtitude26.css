@@ -139,3 +139,9 @@ button.btn:hover {
     box-shadow: 0 0 15px rgba(234, 131, 121, 0.6) !important;
     /* Glow matching #ea8379 */
 }
+
+/* Vendor / Partners Page Styling */
+.md-vendor h2,
+.md-vendor p {
+    color: #FAFAFA !important;
+}
