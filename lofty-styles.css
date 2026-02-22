@@ -48,6 +48,24 @@ h6:hover {
         background-position: 0%;
     }
 }
+/* Fading in and out of profiles/agents*/
+.layout1-avatar-box img {
+  /* Makes the image black and white */
+  filter: grayscale(100%);
+  
+  /* Adds a smooth transition effect */
+  transition: filter 0.5s ease;
+  
+  /* Standard styling for the image */
+  max-width: 100%;
+  height: auto;
+}
+
+.layout1-avatar-box img:hover {
+  /* Returns the image to full color */
+  filter: grayscale(0%);
+}
+
 
 /* Gold‑trimmed button with onyx background + white text + soft gold glow */
 .banner-button-v2 .btn-item.plain {
