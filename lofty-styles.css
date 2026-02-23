@@ -381,6 +381,11 @@ div#layout11-title {
     color: #FFFFFF !important;
 }
 
+/* Agent description text color */
+.info.template5 .desc div.text {
+    color: #FFFFFF !important;
+}
+
 /* Agent background color */
 .md-agent-banner.template5 {
     background-color: #000000 !important;
