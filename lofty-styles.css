@@ -1318,3 +1318,47 @@ header.md-header.layout2 {
     background-color: #000000 !important;
     border: 1px solid #FFD700 !important;
 }
+
+/* 6. Range Button Group Items (Beds/Baths selection numbers) */
+/* Base text styles */
+.md-search-bar.layout1 .range-button-group-item span {
+    font-weight: 800 !important;
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+    transition: all 0.3s ease !important;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover styles - add gradient border and glow */
+.md-search-bar.layout1 .range-button-group-item:hover {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.8) 100%) padding-box,
+        linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%)) border-box !important;
+    border: 1px solid transparent !important;
+    box-shadow: 0 0 10px rgba(255, 215, 130, 0.4), 0 0 20px rgba(255, 200, 90, 0.2) !important;
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+/* Active/Selected styles */
+.md-search-bar.layout1 .range-button-group-item span.selected,
+.md-search-bar.layout1 .range-button-group-item span.range-start,
+.md-search-bar.layout1 .range-button-group-item span.range-end,
+.md-search-bar.layout1 .range-button-group-item span.active {
+    background: linear-gradient(180deg,
+            hsl(45 100% 50%),
+            hsl(35 80% 30%),
+            hsl(35 100% 20%)) !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    color: #FFFFFF !important;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5) !important;
+}
