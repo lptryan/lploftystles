@@ -1103,3 +1103,9 @@ header.md-header.layout2 {
     color: #ffffff !important;
     background-color: transparent !important;
 }
+
+/* Agent Contact Info Text Override */
+#app>div.md-agent-banner.template5>div>div>div>div.avatar>p:nth-child(4),
+#app>div.md-agent-banner.template5>div>div>div>div.avatar>p:nth-child(4) * {
+    color: #ffffff !important;
+}
