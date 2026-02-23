@@ -1257,7 +1257,10 @@ header.md-header.layout2 {
 
 /* 2. Drop downs and filters - Gold gradient border and dark background */
 .md-search-bar.layout1 .place.layout1,
-.md-search-bar.layout1 .more-filter {
+.md-search-bar.layout1 .more-filter,
+.md-search-bar.layout1 .click-show-list,
+.md-search-bar.layout1 .search-detail-item.more-btn,
+.md-search-bar.layout1 .com-tab li {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 20, 20, 0.8) 100%) padding-box,
         linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%)) border-box !important;
     border: 1px solid transparent !important;
@@ -1275,7 +1278,13 @@ header.md-header.layout2 {
 .md-search-bar.layout1 .more-filter .desc *,
 .md-search-bar.layout1 .more-filter .icon,
 .md-search-bar.layout1 .more-filter .icon *,
-.md-search-bar.layout1 .more-filter .iconfont {
+.md-search-bar.layout1 .more-filter .iconfont,
+.md-search-bar.layout1 .click-show-list,
+.md-search-bar.layout1 .click-show-list *,
+.md-search-bar.layout1 .search-detail-item.more-btn,
+.md-search-bar.layout1 .search-detail-item.more-btn *,
+.md-search-bar.layout1 .com-tab li,
+.md-search-bar.layout1 .com-tab li * {
     background: linear-gradient(180deg,
             hsl(45 100% 70%),
             hsl(45 100% 50%),
@@ -1288,7 +1297,11 @@ header.md-header.layout2 {
 
 /* 4. Glow on hover */
 .md-search-bar.layout1 .place.layout1:hover,
-.md-search-bar.layout1 .more-filter:hover {
+.md-search-bar.layout1 .more-filter:hover,
+.md-search-bar.layout1 .click-show-list:hover,
+.md-search-bar.layout1 .search-detail-item.more-btn:hover,
+.md-search-bar.layout1 .com-tab li:hover {
     box-shadow: 0 0 15px rgba(255, 215, 130, 0.4), 0 0 30px rgba(255, 200, 90, 0.2) !important;
+    z-index: 10;
     transform: scale(1.02);
 }
