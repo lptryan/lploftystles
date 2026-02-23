@@ -1086,3 +1086,8 @@ header.md-header.layout2 {
 .banner.single {
     background-color: #000000 !important;
 }
+
+/* Agent Info Team Member text color */
+#app>div.md-team.layout1.mg-bg>div>div.swiper.swiper-initialized.swiper-horizontal.len-9.f-col.swiper-backface-hidden>div>div.swiper-slide.swiper-slide-active>div>div.agent-info>p {
+    color: #FFFFFF !important;
+}
