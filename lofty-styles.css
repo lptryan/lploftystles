@@ -1200,11 +1200,18 @@ header.md-header.layout2 {
     text-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.6) !important;
 }
 
-/* Ensure inputs have white background for the black text */
-.pop-sign-log .input-container,
+/* Ensure inputs have white background for the black text and remove top line */
+.pop-sign-log .input-container {
+    background-color: #FFFFFF !important;
+    border-radius: 4px;
+}
+
 .pop-sign-log .input-container input {
     background-color: #FFFFFF !important;
     border-radius: 4px;
+    padding-top: 0px !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 /* Black text for Email/Password, floating prompts, and icons inside the inputs */
