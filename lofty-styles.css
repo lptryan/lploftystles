@@ -1116,3 +1116,7 @@ header.md-header.layout2 {
 #app>div.md-team.layout1.mg-bg>div>div.swiper.swiper-initialized.swiper-horizontal.len-9.f-col.swiper-backface-hidden>div>div.swiper-slide.swiper-slide-active>div>div.agent-info>p {
     color: #FFFFFF !important;
 }
+
+.md-banner.layout2.revert .content-wrapper {
+    padding: 50px 0 0 50px;
+}
