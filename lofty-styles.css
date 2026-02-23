@@ -1279,12 +1279,10 @@ header.md-header.layout2 {
 .md-search-bar.layout1 .more-filter .icon,
 .md-search-bar.layout1 .more-filter .icon *,
 .md-search-bar.layout1 .more-filter .iconfont,
-.md-search-bar.layout1 .click-show-list,
-.md-search-bar.layout1 .click-show-list *,
-.md-search-bar.layout1 .search-detail-item.more-btn,
-.md-search-bar.layout1 .search-detail-item.more-btn *,
-.md-search-bar.layout1 .com-tab li,
-.md-search-bar.layout1 .com-tab li * {
+.md-search-bar.layout1 .click-show-list>.box-div>.title,
+.md-search-bar.layout1 .click-show-list>.box-div>.title *,
+.md-search-bar.layout1 .search-detail-item.more-btn>.box-div>.text,
+.md-search-bar.layout1 .search-detail-item.more-btn>.box-div>.iconfont {
     background: linear-gradient(180deg,
             hsl(45 100% 70%),
             hsl(45 100% 50%),
@@ -1293,6 +1291,12 @@ header.md-header.layout2 {
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
     color: transparent !important;
+}
+
+/* 3.5 Regular gold text for list/map tabs which do not have text wrappers */
+.md-search-bar.layout1 .com-tab li {
+    color: #FFD700 !important;
+    font-weight: 600 !important;
 }
 
 /* 4. Glow on hover */
