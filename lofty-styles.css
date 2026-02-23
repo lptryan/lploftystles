@@ -1166,7 +1166,7 @@ header.md-header.layout2 {
     }
 }
 
-/* White text for 'New here', 'Forgot?', 'or', and 'X' close button */
+/* White text for 'New here', 'Forgot?', 'or', disclaimer, and sign-in text */
 .pop-sign-log .create-account,
 .pop-sign-log .create-account *,
 .pop-sign-log .forgot,
@@ -1175,11 +1175,29 @@ header.md-header.layout2 {
 .pop-sign-log .split-line,
 .pop-sign-log .split-line span,
 .pop-sign-log .third-login .title,
+.pop-sign-log .disclaimer-wrap *,
+.pop-sign-log .tcpa-consent *,
+.pop-sign-log .sign-in,
+.pop-sign-log .sign-in * {
+    color: #FFFFFF !important;
+}
+
+/* Gold close 'X' button with hover glow */
 .sign-log .pop-mask .icon-close,
 .sign-log .pop-mask .close,
 .sign-log .icon-close,
 .pop-sign-log .close {
-    color: #FFFFFF !important;
+    color: #FFD700 !important;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.4) !important;
+    transition: all 0.3s ease !important;
+}
+
+.sign-log .pop-mask .icon-close:hover,
+.sign-log .pop-mask .close:hover,
+.sign-log .icon-close:hover,
+.pop-sign-log .close:hover {
+    color: #FFF200 !important;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.6) !important;
 }
 
 /* Ensure inputs have white background for the black text */
