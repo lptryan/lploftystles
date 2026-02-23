@@ -1120,3 +1120,26 @@ header.md-header.layout2 {
 .md-banner.layout2.revert .content-wrapper {
     padding: 50px 0 0 50px;
 }
+
+/* Realtor Search Labels */
+.search-bar .custom-input.layout6 span {
+    font-family: "Cinzel", serif !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+    display: inline-block !important;
+}
+
+/* Realtor Search Inputs */
+.search-bar .custom-input.layout6 input {
+    color: #FFFFFF !important;
+    background-color: #000000 !important;
+    padding: 10px !important;
+}
