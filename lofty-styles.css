@@ -1109,3 +1109,8 @@ header.md-header.layout2 {
 #app>div.md-agent-banner.template5>div>div>div>div.avatar>p:nth-child(4) * {
     color: #ffffff !important;
 }
+
+/* Agent Info Contact Icons Override */
+.info.template5 .agent-info.pc .avatar .concat .iconfont {
+    color: #ffffff !important;
+}
