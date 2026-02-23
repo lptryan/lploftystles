@@ -397,6 +397,11 @@ div#layout11-title {
     background-color: #000000 !important;
 }
 
+/* Agent Profile Contact Info (Icons and Text Links) */
+.md-agent-banner.template5 .avatar p.concat * {
+    color: #FFFFFF !important;
+}
+
 .page-content>*:not(.mg-bg) {
     background: none;
 }
