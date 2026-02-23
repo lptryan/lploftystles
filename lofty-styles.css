@@ -400,6 +400,11 @@ div#layout11-title {
     background-color: #000000 !important;
 }
 
+/* Agent descriptino text background color */
+#app>div.md-agent-banner.template5>div>div>div>div.desc>div>span {
+    background-color: none !important;
+}
+
 .page-content>*:not(.mg-bg) {
     background: none;
 }
