@@ -386,31 +386,15 @@ div#layout11-title {
     color: #FFFFFF !important;
 }
 
-#app>div.md-agent-banner.template5>div>div>div>div.desc>div {
+/* Agent Description Text Override (Strip inline paste formatting) */
+.md-agent-banner.template5 .desc .text * {
+    background-color: transparent !important;
     color: #FAFAFA !important;
-}
-
-#app>div.md-agent-banner.template5>div>div>div>div.desc>div>span {
-    color: #FFFFFF !important;
-    background-color: none !important;
-}
-
-.agent-info .desc .text span {
-    background-color: none !important;
 }
 
 /* Agent background color */
 .md-agent-banner.template5 {
     background-color: #000000 !important;
-}
-
-#app>div.md-agent-banner.template5>div>div>div>div.desc>div>span {
-    background-color: none !important;
-}
-
-/* Agent descriptino text background color */
-#app>div.md-agent-banner.template5>div>div>div>div.desc>div>span {
-    background-color: none !important;
 }
 
 .page-content>*:not(.mg-bg) {
