@@ -1114,3 +1114,8 @@ header.md-header.layout2 {
 .info.template5 .agent-info.pc .avatar .concat .iconfont {
     color: #ffffff !important;
 }
+
+/* Agent Info Contact Email Text Override */
+#app>div.md-agent-banner.template5>div>div>div>div.avatar>p:nth-child(5)>span {
+    color: #ffffff !important;
+}
