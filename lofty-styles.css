@@ -392,6 +392,7 @@ div#layout11-title {
 
 #app>div.md-agent-banner.template5>div>div>div>div.desc>div>span {
     color: #FFFFFF !important;
+    background-color: none !important;
 }
 
 /* Agent background color */
