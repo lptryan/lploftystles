@@ -5,9 +5,27 @@
 h1,
 h2,
 h3,
-h4,
+h4 {
+    font-weight: 800 !important;
+    font-family: "Cinzel", serif !important;
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background-size: 200% 100%;
+}
+
 h5,
 h6 {
+    font-weight: 700 !important;
     font-family: "Cinzel", serif !important;
     background: linear-gradient(180deg,
             hsl(45 100% 70%),
@@ -48,22 +66,23 @@ h6:hover {
         background-position: 0%;
     }
 }
+
 /* Fading in and out of profiles/agents*/
 .layout1-avatar-box img {
-  /* Makes the image black and white */
-  filter: grayscale(100%);
-  
-  /* Adds a smooth transition effect */
-  transition: filter 0.5s ease;
-  
-  /* Standard styling for the image */
-  max-width: 100%;
-  height: auto;
+    /* Makes the image black and white */
+    filter: grayscale(100%);
+
+    /* Adds a smooth transition effect */
+    transition: filter 0.5s ease;
+
+    /* Standard styling for the image */
+    max-width: 100%;
+    height: auto;
 }
 
 .layout1-avatar-box img:hover {
-  /* Returns the image to full color */
-  filter: grayscale(0%);
+    /* Returns the image to full color */
+    filter: grayscale(0%);
 }
 
 
