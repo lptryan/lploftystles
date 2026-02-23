@@ -390,6 +390,10 @@ div#layout11-title {
     color: #FAFAFA !important;
 }
 
+#app>div.md-agent-banner.template5>div>div>div>div.desc>div>span {
+    color: #FFFFFF !important;
+}
+
 /* Agent background color */
 .md-agent-banner.template5 {
     background-color: #000000 !important;
