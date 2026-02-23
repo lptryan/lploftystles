@@ -1178,7 +1178,8 @@ header.md-header.layout2 {
 .pop-sign-log .disclaimer-wrap *,
 .pop-sign-log .tcpa-consent *,
 .pop-sign-log .sign-in,
-.pop-sign-log .sign-in * {
+.pop-sign-log .sign-in *,
+.sign-log.broker-one-step .desc .text {
     color: #FFFFFF !important;
 }
 
