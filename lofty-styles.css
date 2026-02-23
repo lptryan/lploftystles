@@ -395,9 +395,17 @@ div#layout11-title {
     background-color: none !important;
 }
 
+.agent-info .desc .text span {
+    background-color: none !important;
+}
+
 /* Agent background color */
 .md-agent-banner.template5 {
     background-color: #000000 !important;
+}
+
+#app>div.md-agent-banner.template5>div>div>div>div.desc>div>span {
+    background-color: none !important;
 }
 
 /* Agent descriptino text background color */
