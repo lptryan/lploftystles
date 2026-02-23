@@ -1305,3 +1305,12 @@ header.md-header.layout2 {
     z-index: 10;
     transform: scale(1.02);
 }
+
+/* 5. Ensure dropdown list panels have a solid black background */
+.md-search-bar.layout1 .list-panel,
+.md-search-bar.layout1 .list-panel .range-button-group-inner,
+.md-search-bar.layout1 .dropdown_container,
+.md-search-bar.layout1 .drop_left {
+    background-color: #000000 !important;
+    border: 1px solid #FFD700 !important;
+}
