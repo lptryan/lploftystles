@@ -1381,3 +1381,75 @@ header.md-header.layout2 {
     background: #000000 !important;
     background-color: #000000 !important;
 }
+
+/* --- OVERRIDES (MOBILE MENU, BUTTONS, P TAG) --- */
+
+/* Make .site-p p font-size 1.2em */
+.site-p p {
+    font-size: 1.2em !important;
+}
+
+/* Mobile Menu Background */
+.nav-container.show,
+ul.head-menu,
+.nav-mask.active,
+.md-header.layout2.mobile {
+    background-color: #000000 !important;
+}
+
+/* Close Button Gold Treatment */
+.nav-container .close,
+.nav-container .icon-close,
+.download-closeWrap,
+.download-closeWrap i.download-close,
+.download-closeWrap * {
+    color: #FFD700 !important;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.4) !important;
+    transition: all 0.3s ease !important;
+}
+
+.nav-container .close:hover,
+.nav-container .icon-close:hover,
+.download-closeWrap:hover,
+.download-closeWrap i.download-close:hover,
+.download-closeWrap *:hover {
+    color: #FFF200 !important;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.6) !important;
+}
+
+/* Luxury Treatment for Register / Sign In Buttons in Mobile Menu */
+ul.head-account a {
+    font-family: "Cinzel", serif !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+
+    /* Luxury Background */
+    background:
+        linear-gradient(#0f0f10, #0f0f10) padding-box,
+        linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) border-box !important;
+
+    border: 2px solid transparent !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.3s ease !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 48px !important;
+    padding: 0 24px !important;
+    margin: 5px 0 !important;
+}
+
+/* Hover glow effect for the register / sign in buttons */
+ul.head-account a:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 0 6px rgba(255, 215, 130, 0.45),
+        0 0 12px rgba(255, 200, 90, 0.35) !important;
+    color: #ffffff !important;
+}
