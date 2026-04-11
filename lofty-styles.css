@@ -673,7 +673,8 @@ div#layout11-title {
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     margin-right: 10px !important;
     border-radius: 4px !important;
-    padding: 10px 20px !important; /* Added padding for better button shape */
+    padding: 10px 20px !important;
+    /* Added padding for better button shape */
     transition: all 0.3s ease !important;
 }
 
@@ -857,7 +858,7 @@ body.mortgage-lender {
 
 .vendor-input-comp {
     display: flex !important;
-    flex-direction: row !important;
+    flex-direction: row-reverse !important;
     align-items: center !important;
     position: relative !important;
     gap: 8px !important;
@@ -926,7 +927,8 @@ body.mortgage-lender {
     font-weight: 700 !important;
     color: #fafafa !important;
     border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    padding: 10px 20px !important; /* Consolidated padding here as well */
+    padding: 10px 20px !important;
+    /* Consolidated padding here as well */
 }
 
 .vendor-tab-comp li.active,
@@ -1501,7 +1503,7 @@ ul.head-account a:hover {
 
     border: 2px solid transparent !important;
     border-radius: 6px !important;
-    
+
     /* Soft Glow */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
@@ -1521,5 +1523,3 @@ ul.head-account a:hover {
 .md-cta.layout2 .content-mask {
     background-color: transparent !important;
 }
-
-
