@@ -1523,3 +1523,126 @@ ul.head-account a:hover {
 .md-cta.layout2 .content-mask {
     background-color: transparent !important;
 }
+
+/* =========================================
+   SORT / FILTER DROPDOWN STYLING
+   (Search results sort button + dropdown)
+   ========================================= */
+
+/* --- Default/Sort Button --- */
+.sort-comp .sort-btn,
+.sort-btn,
+[class*="sort-btn"] {
+    font-family: "Cinzel", serif !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+
+    /* Dark glass background */
+    background: rgba(0, 0, 0, 0.75) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+
+    /* Gold gradient border */
+    border: 1px solid rgba(255, 215, 0, 0.5) !important;
+    border-radius: 4px !important;
+    padding: 8px 14px !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Gold gradient text on button */
+.sort-comp .sort-btn span,
+.sort-comp .sort-btn .iconfont,
+.sort-btn span,
+.sort-btn .iconfont {
+    background: linear-gradient(180deg,
+        hsl(45 100% 70%),
+        hsl(45 100% 50%),
+        hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Button Hover */
+.sort-comp .sort-btn:hover,
+.sort-btn:hover {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border-color: rgba(255, 215, 0, 0.8) !important;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4) !important;
+}
+
+/* --- Dropdown Box --- */
+.sort-comp .sort-list,
+.sort-list,
+[class*="sort-list"] {
+    background: rgba(5, 5, 8, 0.92) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 215, 0, 0.3) !important;
+    border-radius: 6px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 15px rgba(212, 175, 55, 0.1) !important;
+}
+
+/* --- Dropdown List Items --- */
+.sort-comp .sort-list li,
+.sort-list li,
+[class*="sort-list"] li {
+    font-family: "Montserrat", sans-serif !important;
+    color: #ffffff !important; /* Default: white */
+    background: transparent !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+    padding: 10px 16px !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+/* Hover: gold text, darker glass */
+.sort-comp .sort-list li:hover,
+.sort-list li:hover {
+    color: #FFD700 !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Active state: gold with glow */
+.sort-comp .sort-list li.active,
+.sort-list li.active {
+    color: #FFD700 !important;
+    background: rgba(212, 175, 55, 0.08) !important;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.6) !important;
+    font-weight: 700 !important;
+}
+
+/* Active checkmark icon */
+.sort-comp .sort-list li.active .iconfont,
+.sort-list li.active .iconfont {
+    color: #FFD700 !important;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.6) !important;
+}
+
+/* --- .des (description text) --- */
+.des {
+    color: #ffffff !important;
+}
+
+/* --- .option-items (filter options like checkboxes/tags) --- */
+.option-items,
+.option-items span,
+.option-items label {
+    background: linear-gradient(180deg,
+        hsl(45 100% 70%),
+        hsl(45 100% 50%),
+        hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    font-family: "Cinzel", serif !important;
+    font-weight: 700 !important;
+}
+
+/* --- .reset-tip (reset filters link) --- */
+.reset-tip,
+.reset-tip span,
+.reset-tip a {
+    color: #ffffff !important;
+    font-family: "Montserrat", sans-serif !important;
+}
