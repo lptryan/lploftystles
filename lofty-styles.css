@@ -176,6 +176,15 @@ footer.md-footer.layout3.inner.inner {
     background-size: 200% 100% !important;
 }
 
+.site-title h2 {
+    font-size: 1.7em;
+    line-height: 1.2em;
+}
+
+.md-banner.layout2 .content-wrapper .site-title {
+    margin-bottom: 0px;
+}
+
 .layout11-title,
 div#layout11-title {
     font-family: "Cinzel", serif !important;
@@ -1002,6 +1011,10 @@ header.md-header.layout2 {
 .site-p {
     color: #fafafa !important;
     font-family: 'Montserrat', sans-serif !important;
+}
+
+.site-p h3 {
+    font-size: 1.7em;
 }
 
 /* Media Title Styling (Cinzel + Gold Gradient) */
