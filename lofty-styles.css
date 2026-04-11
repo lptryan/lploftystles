@@ -851,23 +851,29 @@ body.mortgage-lender {
 }
 
 /* 2. Search Button Styling (Transforming the Icon) */
-/* On partners page: .vendor-input-comp .iconfont */
+/* The icon (.iconfont.icon-search-bold) is the FIRST child in the DOM before the input.
+   It is a flex sibling, NOT a positioned element — absolute positioning fights the layout.
+   We use flex-based centering on the parent and let the icon be a flex item. */
 
 .vendor-input-comp {
-    position: relative;
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    position: relative !important;
+    gap: 8px !important;
 }
 
-/* Input field refinements */
+/* Input field — take remaining space */
 .vendor-input-comp input {
+    flex: 1 !important;
     background: transparent !important;
     border: 1px solid #ffffff !important;
     color: #fafafa !important;
     border-radius: 4px !important;
-    padding: 15px 60px 15px 15px !important; /* Increased padding and added specific right padding */
-    min-height: 50px !important; /* Fixed height for better icon alignment */
+    padding: 14px 15px !important;
+    height: 50px !important;
     font-family: "Montserrat", sans-serif !important;
+    box-sizing: border-box !important;
 }
 
 .vendor-input-comp input:focus {
@@ -876,23 +882,22 @@ body.mortgage-lender {
     outline: none !important;
 }
 
-/* The Search Icon -> Button Transformation */
+/* The Search Icon — flex item, naturally centered by parent align-items: center */
 .vendor-input-comp .iconfont.icon-search-bold {
-    /* Position it like a button */
-    position: absolute !important;
-    right: 5px !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    z-index: 2 !important; /* Ensure it's above the input */
+    /* Override any absolute/transform positioning from other rules */
+    position: static !important;
+    top: auto !important;
+    transform: none !important;
+    flex-shrink: 0 !important;
 
     /* Box Model */
     width: 48px !important;
-    height: 40px !important;
+    height: 48px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
 
-    /* Luxury Button Styling (Matching .search-button) */
+    /* Luxury Button Styling */
     background:
         linear-gradient(#0f0f10, #0f0f10) padding-box,
         linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%)) border-box !important;
@@ -907,13 +912,11 @@ body.mortgage-lender {
 
     /* Shadow & Transition */
     box-shadow: 0 0 10px rgba(212, 175, 55, 0.3) !important;
-    transition: all 0.3s ease !important;
+    transition: box-shadow 0.3s ease, color 0.3s ease !important;
 }
 
 .vendor-input-comp .iconfont.icon-search-bold:hover {
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.6) !important;
-    transform: translateY(-50%) scale(1.05) !important;
-    /* Keep centering + loose scale */
     color: #FFD700 !important;
 }
 
