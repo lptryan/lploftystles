@@ -1452,4 +1452,9 @@ ul.head-account a:hover {
         0 0 6px rgba(255, 215, 130, 0.45),
         0 0 12px rgba(255, 200, 90, 0.35) !important;
     color: #ffffff !important;
+}
+
+/* --- CUSTOM CONTENT & EMBEDS --- */
+.custom-content-margins {
+    margin: 20px 0px 20px 0px !important;
 }
