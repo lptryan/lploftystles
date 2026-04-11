@@ -1510,4 +1510,10 @@ ul.head-account a:hover {
         0 0 15px rgba(255, 215, 130, 0.6),
         0 0 30px rgba(255, 200, 90, 0.4) !important;
 }
+
+/* Set background-color to transparent to prevent blocking the glass styling on .media-content-v2 */
+.md-cta.layout2 .content-mask {
+    background-color: transparent !important;
+}
+
 
