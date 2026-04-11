@@ -1457,4 +1457,57 @@ ul.head-account a:hover {
 /* --- CUSTOM CONTENT & EMBEDS --- */
 .custom-content-margins {
     margin: 20px 0px 20px 0px !important;
-}
+}
+
+/* --- JOIN PAGE CTA STYLING --- */
+
+/* Glass Background for the Join Page Invite Box */
+.md-cta.layout2 .media-content-v2 {
+    background: rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 215, 0, 0.3) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Luxury Treatment for CTA Buttons (Join Page & similar) */
+.md-cta.layout2 .banner-button-v2 .btn-item {
+    font-family: "Cinzel", serif !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 54px !important;
+    padding: 0 35px !important;
+    letter-spacing: 1px !important;
+
+    /* Luxury Background & Gold Gradient Border */
+    background:
+        linear-gradient(#0f0f10, #0f0f10) padding-box,
+        linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) border-box !important;
+
+    border: 2px solid transparent !important;
+    border-radius: 6px !important;
+    
+    /* Soft Glow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+/* Hover: Move Up and Intense Glow */
+.md-cta.layout2 .banner-button-v2 .btn-item:hover {
+    transform: translateY(-5px) !important;
+    color: #ffffff !important;
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.5),
+        0 0 15px rgba(255, 215, 130, 0.6),
+        0 0 30px rgba(255, 200, 90, 0.4) !important;
+}
+
