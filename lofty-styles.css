@@ -1582,10 +1582,14 @@ ul.list-panel.panel-style {
     -webkit-backdrop-filter: blur(14px) !important;
     border: 1px solid rgba(255, 215, 0, 0.3) !important;
     border-radius: 6px !important;
+    padding-bottom: 20px !important;
     box-shadow:
         0 12px 35px rgba(0, 0, 0, 0.8),
         0 0 15px rgba(212, 175, 55, 0.1) !important;
     overflow: hidden !important;
+    /* Raise above map tooltips and overlay text */
+    z-index: 9999 !important;
+    position: relative !important;
 }
 
 /* --- Dropdown Items (li) --- */
@@ -1595,6 +1599,13 @@ ul.list-panel.panel-style li {
     background: transparent !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
     padding: 10px 16px !important;
+    /* Remove any height that chops off item text */
+    height: auto !important;
+    min-height: unset !important;
+    line-height: 1.4 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
     transition: background 0.2s ease, color 0.2s ease !important;
     cursor: pointer !important;
     list-style: none !important;
@@ -1614,12 +1625,30 @@ ul.list-panel.panel-style li.selected {
     font-weight: 700 !important;
 }
 
-/* Checkmark icon on active item */
+/* Checkmark icon on active item.
+   IMPORTANT: Do NOT use background-clip:text on icon fonts — it clips the glyph and renders a box.
+   Use plain color + text-fill-color instead. */
 ul.list-panel.panel-style li.selected .iconfont,
+ul.list-panel.panel-style li.selected em.iconfont,
 ul.list-panel.panel-style li.selected .icon-checked-light {
+    /* Plain gold — no gradient clip which breaks icon font glyphs */
     color: #FFD700 !important;
     -webkit-text-fill-color: #FFD700 !important;
+    background: none !important;
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
     text-shadow: 0 0 8px rgba(212, 175, 55, 0.6) !important;
+    /* Align checkmark vertically with the text */
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 14px !important;
+    flex-shrink: 0 !important;
+}
+
+/* Remove border from sort button title — not needed with our custom styling */
+.md-search-result.layout1 .search-sort .select:not(.mobile) .title {
+    border: none !important; /* Removed: border was redundant with our container border */
 }
 
 /* --- .des (description text) --- */
