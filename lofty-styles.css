@@ -673,6 +673,7 @@ div#layout11-title {
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     margin-right: 10px !important;
     border-radius: 4px !important;
+    padding: 10px 20px !important; /* Added padding for better button shape */
     transition: all 0.3s ease !important;
 }
 
@@ -864,8 +865,8 @@ body.mortgage-lender {
     border: 1px solid #ffffff !important;
     color: #fafafa !important;
     border-radius: 4px !important;
-    padding-right: 60px !important;
-    /* Space for the button */
+    padding: 15px 60px 15px 15px !important; /* Increased padding and added specific right padding */
+    min-height: 50px !important; /* Fixed height for better icon alignment */
     font-family: "Montserrat", sans-serif !important;
 }
 
@@ -882,6 +883,7 @@ body.mortgage-lender {
     right: 5px !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
+    z-index: 2 !important; /* Ensure it's above the input */
 
     /* Box Model */
     width: 48px !important;
@@ -921,6 +923,7 @@ body.mortgage-lender {
     font-weight: 700 !important;
     color: #fafafa !important;
     border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    padding: 10px 20px !important; /* Consolidated padding here as well */
 }
 
 .vendor-tab-comp li.active,
