@@ -2064,4 +2064,23 @@ span.iconfont.icon-close.tag-close {
     color: gold !important;
     text-decoration: underline !important;
 }
+
+/* Disclaimer text styling */
+.disclaimer-wrap.opt-in.pop-register-disclaimer .privacy-text>*, 
+.disclaimer-wrap.opt-in.pop-register-disclaimer .disclaimer-content>* {
+    font-size: 14px !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Sign-in and Create account buttons */
+.sign-log.broker-one-step .sign-in, 
+.sign-log.broker-one-step .create-account {
+    font-size: 14px !important;
+    padding: 10px !important;
+}
+
+/* Pop-form headings */
+.pop-form hgroup h3 {
+    font-size: 20px !important;
+}
 
