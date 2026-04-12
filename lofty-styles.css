@@ -2012,4 +2012,20 @@ span.label.cursor {
 .ai-tag-item .ai-tag-item-close:hover {
     opacity: 1 !important;
 }
+
+/* Empty state option list items: gold */
+.empty-right .empty-option-list .option-item {
+    color: gold !important;
+}
+
+/* Tag close button: center the × icon within its span */
+.condition-item-tag .iconfont.icon-close.tag-close,
+span.iconfont.icon-close.tag-close {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
+    line-height: 1 !important;
+}
+
 
