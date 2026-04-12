@@ -1768,8 +1768,8 @@ ul.list-panel.panel-style li.selected .icon-checked-light {
     border-radius: 4px !important;
     /* Do NOT use position:relative — it causes the button to float out of flow */
     position: static !important;
-    background-image: linear-gradient(#000, #000), 
-                      linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%)) !important;
+    background-image: linear-gradient(#000, #000),
+        linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%)) !important;
     background-origin: border-box !important;
     background-clip: padding-box, border-box !important;
     transition: all 0.3s ease !important;
@@ -1785,8 +1785,8 @@ ul.list-panel.panel-style li.selected .icon-checked-light {
 .btn-fill:hover {
     transform: translateY(-2px) !important;
     box-shadow: 0 0 15px rgba(212, 175, 55, 0.4) !important;
-    background-image: linear-gradient(#111, #111), 
-                      linear-gradient(180deg, hsl(45 100% 80%), hsl(45 100% 60%), hsl(35 80% 50%)) !important;
+    background-image: linear-gradient(#111, #111),
+        linear-gradient(180deg, hsl(45 100% 80%), hsl(45 100% 60%), hsl(35 80% 50%)) !important;
 }
 
 /* Fix: footer buttons were floating in middle of panel instead of anchored to bottom */
@@ -1804,7 +1804,7 @@ ul.list-panel.panel-style li.selected .icon-checked-light {
 
 /* Reset All Filters button: black background */
 .an-layer .more-list-footer .btn-plain {
-    color: var(--g-btn-background) !important;
+    color: #ffffff) !important;
     background-color: #000000 !important;
 }
 
@@ -1843,6 +1843,51 @@ ul.list-panel.panel-style li.selected .icon-checked-light {
     background-size: 200% 100% !important;
 }
 
+/* Filters Title in the filter panel */
+.more-list-title {
+    font-weight: 800 !important;
+    font-family: "Cinzel", serif !important;
+    background: linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background-size: 200% 100%;
+}
+
+/* save search in the filters */
+
+label.save-search {
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    color: #FFFFFF !important;
+    border-radius: 4px !important;
+    padding: 10px 20px !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.search-more-common .save-search:hover::after {
+    content: '';
+    background: rgba(25, 25, 25, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
 /* Label no-wrap: white */
 .label.no_wrap {
     color: #FFFFFF !important;
@@ -1862,6 +1907,10 @@ span.label.cursor {
 }
 
 /* Range Button Group: selected item glass + gold styling */
+.range-button-group-item span {
+    color: #FFFFFF !important;
+}
+
 .range-button-group-item span.selected {
     font-family: "Cinzel", serif !important;
     color: #FFFFFF !important;
@@ -1890,10 +1939,10 @@ span.label.cursor {
 }
 
 /* Nav header: remove gold underline bar from active/hover menu items */
-.md-header.layout2 .header-container .head-menu > .menu-item.active::before,
-.md-header.layout2 .header-container .head-menu > .menu-item:hover::before,
-.md-header.layout2 .header-container .head-account > .menu-item.active::before,
-.md-header.layout2 .header-container .head-account > .menu-item:hover::before {
+.md-header.layout2 .header-container .head-menu>.menu-item.active::before,
+.md-header.layout2 .header-container .head-menu>.menu-item:hover::before,
+.md-header.layout2 .header-container .head-account>.menu-item.active::before,
+.md-header.layout2 .header-container .head-account>.menu-item:hover::before {
     content: '' !important;
     position: absolute !important;
     width: 100% !important;
@@ -1902,4 +1951,35 @@ span.label.cursor {
     bottom: 2px !important;
     left: 0 !important;
 }
-
+
+/* =========================================
+   SEARCH CONDITION TAGS
+   (.empty-search-conditions tag pills)
+   ========================================= */
+
+/* Tag name: white text */
+.md-search-result.layout1 .empty-search-conditions.layout1 .condition-item-tag .tag-name {
+    color: #FFFFFF !important;
+}
+
+/* Tag close (×) button: gold gradient text + gold underline */
+.md-search-result.layout1 .empty-search-conditions.layout1 .condition-item-tag .tag-close {
+    background: linear-gradient(180deg,
+        hsl(45 100% 70%),
+        hsl(45 100% 50%),
+        hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    /* Gold underline */
+    border-bottom: 1px solid rgba(212, 175, 55, 0.6) !important;
+    display: inline-block !important;
+    transition: filter 0.2s ease, border-color 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+/* Tag close hover: brighter gold */
+.md-search-result.layout1 .empty-search-conditions.layout1 .condition-item-tag .tag-close:hover {
+    filter: brightness(0.75) !important;
+    border-bottom-color: rgba(212, 175, 55, 1) !important;
+}
