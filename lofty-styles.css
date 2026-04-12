@@ -2049,4 +2049,13 @@ span.iconfont.icon-close.tag-close {
     /* border-right: none; */
     padding-right: 10px !important;
 }
+
+/* Site title: subtle black glow to make gold text pop on light backgrounds */
+.site-title.center,
+.site-title.center * {
+    text-shadow:
+        0 0 8px rgba(0, 0, 0, 0.8),
+        0 0 20px rgba(0, 0, 0, 0.6),
+        0 2px 4px rgba(0, 0, 0, 0.9) !important;
+}
 
