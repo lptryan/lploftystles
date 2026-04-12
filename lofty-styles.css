@@ -2028,4 +2028,25 @@ span.iconfont.icon-close.tag-close {
     line-height: 1 !important;
 }
 
+/* Tag close button: fit-content size so it doesn't stretch */
+.empty-right .empty-search-conditions.broker .condition-item-tag .tag-close,
+.empty-right .empty-search-conditions.layout1 .condition-item-tag .tag-close {
+    width: fit-content !important;
+    height: fit-content !important;
+}
+
+/* More/Filter button: white text on hover/open/active */
+.search-more-common .more-btn:hover,
+.search-more-common .more-btn.open,
+.search-more-common .more-btn.active {
+    color: #FFFFFF !important;
+}
+
+/* Condition tag pill: horizontal padding */
+.empty-right .empty-search-conditions.broker .condition-item-tag,
+.empty-right .empty-search-conditions.layout1 .condition-item-tag {
+    padding-left: 10px !important;
+    /* border-right: none; */
+    padding-right: 10px !important;
+}
 
