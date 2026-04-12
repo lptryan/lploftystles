@@ -1787,4 +1787,119 @@ ul.list-panel.panel-style li.selected .icon-checked-light {
     box-shadow: 0 0 15px rgba(212, 175, 55, 0.4) !important;
     background-image: linear-gradient(#111, #111), 
                       linear-gradient(180deg, hsl(45 100% 80%), hsl(45 100% 60%), hsl(35 80% 50%)) !important;
-}
+}
+
+/* Fix: footer buttons were floating in middle of panel instead of anchored to bottom */
+.an-layer .more-list-footer {
+    position: relative !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    z-index: calc(var(--level-subhigh) + 9) !important;
+    height: 50px !important;
+    display: flex !important;
+    box-shadow: 0px -2px 20px 0px rgba(0, 0, 0, 0.1) !important;
+    margin-top: 50px !important;
+    width: 100% !important;
+}
+
+/* Reset All Filters button: black background */
+.an-layer .more-list-footer .btn-plain {
+    color: var(--g-btn-background) !important;
+    background-color: #000000 !important;
+}
+
+/* Select Button Group Label: gold gradient Cinzel */
+.select-button-group-wrap .select-button-group-label {
+    font-weight: 800 !important;
+    font-family: "Cinzel", serif !important;
+    background: linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+    position: relative !important;
+    display: inline-block !important;
+    overflow: hidden !important;
+    background-size: 200% 100% !important;
+}
+
+/* Select Button Group Items: black text */
+.select-button-group-item {
+    color: #000000 !important;
+}
+
+/* Title Mid: gold gradient Cinzel (section headings in filters panel) */
+.title_mid {
+    font-family: "Cinzel", serif !important;
+    font-weight: bold !important;
+    background: linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+    position: relative !important;
+    display: inline-block !important;
+    overflow: hidden !important;
+    background-size: 200% 100% !important;
+}
+
+/* Label no-wrap: white */
+.label.no_wrap {
+    color: #FFFFFF !important;
+}
+
+/* Span label cursor: gold gradient */
+span.label.cursor {
+    background: linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+    position: relative !important;
+    display: inline-block !important;
+    overflow: hidden !important;
+    background-size: 200% 100% !important;
+}
+
+/* Range Button Group: selected item glass + gold styling */
+.range-button-group-item span.selected {
+    font-family: "Cinzel", serif !important;
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    background: rgba(0, 0, 0, 0.75) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 215, 0, 0.5) !important;
+    border-radius: 4px !important;
+    padding: 6px 12px !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+/* Range Button Group: pseudo-element spacing fix for selected item */
+.range-button-group-item:has(.selected)::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: -16px !important;
+    width: 22px !important;
+    height: 100% !important;
+    background: transparent !important;
+}
+
+/* Nav header: remove gold underline bar from active/hover menu items */
+.md-header.layout2 .header-container .head-menu > .menu-item.active::before,
+.md-header.layout2 .header-container .head-menu > .menu-item:hover::before,
+.md-header.layout2 .header-container .head-account > .menu-item.active::before,
+.md-header.layout2 .header-container .head-account > .menu-item:hover::before {
+    content: '' !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 4px !important;
+    background-color: transparent !important;
+    bottom: 2px !important;
+    left: 0 !important;
+}
+
