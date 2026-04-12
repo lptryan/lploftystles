@@ -1,0 +1,13 @@
+<!-- OPTION 1: jsDelivr CDN (Recommended - Fast & Reliable) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lptryan/lploftystles@main/livealtitude26.css">
+
+<!-- OPTION 2: Raw GitHub (Fallback) -->
+<link rel="stylesheet" href="https://raw.githubusercontent.com/lptryan/lploftystles/main/livealtitude26.css">
+
+<!-- OPTION 3: Javascript Injection (Place in Footer if Header is locked) -->
+<script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://cdn.jsdelivr.net/gh/lptryan/lploftystles@main/livealtitude26.css'; 
+    document.head.appendChild(link);
+</script>
