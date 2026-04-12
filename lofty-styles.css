@@ -1390,6 +1390,19 @@ header.md-header.layout2 {
     background-color: #000000 !important;
 }
 
+/* --- Filters styling --- */
+.an-layer .more-list-wrap {
+    background: rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 215, 0, 0.3) !important;
+    border-radius: 6px !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8), 0 0 15px rgba(212, 175, 55, 0.1) !important;
+    padding: 15px !important;
+}
+
+
+
 /* --- OVERRIDES (MOBILE MENU, BUTTONS, P TAG) --- */
 
 /* Make .site-p p font-size 1.2em */
@@ -1565,9 +1578,9 @@ ul.head-account a:hover {
 .search-sort .click-show-list .name,
 .search-sort .click-show-list .iconfont {
     background: linear-gradient(180deg,
-        hsl(45 100% 70%),
-        hsl(45 100% 50%),
-        hsl(35 80% 40%)) !important;
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
@@ -1651,7 +1664,8 @@ ul.list-panel.panel-style li.selected .icon-checked-light {
 
 /* Remove border from sort button title — not needed with our custom styling */
 .md-search-result.layout1 .search-sort .select:not(.mobile) .title {
-    border: none !important; /* Removed: border was redundant with our container border */
+    border: none !important;
+    /* Removed: border was redundant with our container border */
 }
 
 /* --- .des (description text) --- */
@@ -1664,9 +1678,9 @@ ul.list-panel.panel-style li.selected .icon-checked-light {
 .option-items span,
 .option-items label {
     background: linear-gradient(180deg,
-        hsl(45 100% 70%),
-        hsl(45 100% 50%),
-        hsl(35 80% 40%)) !important;
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
@@ -1684,6 +1698,20 @@ ul.list-panel.panel-style li.selected .icon-checked-light {
 
 /* Range Button Group Label color fix */
 .range-button-group-wrap .range-button-group-label {
+    font-weight: 800 !important;
+    font-family: "Cinzel", serif !important;
+    background: linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background-size: 200% 100%;
+}
+
+.range-button-group-wrap .range-button-group-tip {
     color: #FFFFFF !important;
 }
 
@@ -1697,4 +1725,58 @@ ul.list-panel.panel-style li.selected .icon-checked-light {
     color: #FFFFFF !important;
 }
 
-
+/* --- More-List Footer Buttons --- */
+
+/* btn-plain: Reset/All button (Clear with white border and white text) */
+.more-list-footer .btn-plain,
+.btn-plain {
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    color: #FFFFFF !important;
+    border-radius: 4px !important;
+    padding: 10px 20px !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    text-align: center !important;
+}
+
+.more-list-footer .btn-plain:hover,
+.btn-plain:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: #FFFFFF !important;
+}
+
+/* btn-fill: Search/Contact Us button (Luxury black background, white text, gold gradient trim) */
+.more-list-footer .btn-fill,
+.btn-fill {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    font-family: "Cinzel", serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    padding: 10px 20px !important;
+    border: 1px solid transparent !important;
+    border-radius: 4px !important;
+    position: relative !important;
+    background-image: linear-gradient(#000, #000), 
+                      linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%)) !important;
+    background-origin: border-box !important;
+    background-clip: padding-box, border-box !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+.more-list-footer .btn-fill:hover,
+.btn-fill:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4) !important;
+    background-image: linear-gradient(#111, #111), 
+                      linear-gradient(180deg, hsl(45 100% 80%), hsl(45 100% 60%), hsl(35 80% 50%)) !important;
+}
