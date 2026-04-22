@@ -145,3 +145,51 @@ button.btn:hover {
 .md-vendor p {
     color: #FAFAFA !important;
 }
+
+/* ===== Listing Page Styles ===== */
+
+/* Links inside house-table-column - coral underlined */
+.house-table-column a {
+    color: #ea8379 !important;
+    text-decoration: underline !important;
+}
+
+/* Link hover - 10% brighter */
+.house-table-column a:hover {
+    color: #ec8f86 !important;
+}
+
+/* House table column text & headers - white */
+.house-table-column {
+    color: #ffffff !important;
+}
+
+.house-table-row .house-table-column {
+    color: #ffffff !important;
+}
+
+.house-table-column.title.price {
+    color: #ffffff !important;
+}
+
+.house-table-column.price {
+    color: #ffffff !important;
+}
+
+.house-table-column.address {
+    color: #ffffff !important;
+}
+
+.house-table-column.title.beds {
+    color: #ffffff !important;
+}
+
+/* Search result header text - white */
+.md-search-result.layout1 .search-result-drawer .search-result-header .search-text {
+    color: #ffffff !important;
+}
+
+/* Sort dropdown icon - coral */
+span.dropdown_icon.iconfont.icon-sort_04 {
+    color: #ea8379 !important;
+}
