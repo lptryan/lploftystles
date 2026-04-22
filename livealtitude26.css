@@ -193,3 +193,53 @@ button.btn:hover {
 span.dropdown_icon.iconfont.icon-sort_04 {
     color: #ea8379 !important;
 }
+
+/* ===== Search Bar & Sort Controls ===== */
+
+/* Search bar layout - full-width centered with padding on desktop */
+@media (min-width: 801px) {
+    .md-search-bar.layout1 {
+        margin: 0 auto;
+        padding: 20px 20px 20px 20px;
+        width: 100%;
+        transition: width 0.3s ease;
+    }
+}
+
+/* Sort dropdown selected value - coral text on white background */
+.md-search-result.layout1 .search-sort .select {
+    color: #ea8379 !important;
+    background-color: #ffffff;
+}
+
+/* Sort dropdown panel - coral text */
+.md-search-result.layout1 .search-sort .list-panel {
+    color: #ea8379;
+}
+
+/* Sort dropdown hover - 20% darker coral for contrast */
+.md-search-result.layout1 .search-sort .list-panel li:hover {
+    color: #bb6961;
+}
+
+/* Sort dropdown selected item - dark navy */
+.md-search-result.layout1 .search-sort .list-panel li.selected {
+    color: #091f4c;
+}
+
+/* ===== Map List & SEO Sections ===== */
+
+/* Map list heading - white text */
+h2.title.in-map-list {
+    color: #ffffff !important;
+}
+
+/* SEO section anchor links - coral */
+.md-search-seo .search-seo .group .content .item .anchor {
+    color: #ea8379;
+}
+
+/* SEO section action link (e.g. "Show More") - coral */
+.md-search-seo .search-seo .action {
+    color: #ea8379;
+}
