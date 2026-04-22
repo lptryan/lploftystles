@@ -116,11 +116,10 @@ button.btn {
     font-weight: 700 !important;
     color: #fafafa !important;
 
-    /* Gradient Border Technique */
-    background:
+    /* Gradient Border Technique - DISABLED to allow per-context backgrounds */
+    /* background:
         linear-gradient(#0d213a, #0d213a) padding-box,
-        /* Updated to #0d213a */
-        linear-gradient(135deg, #ea8379, #f2a49b) border-box !important;
+        linear-gradient(135deg, #ea8379, #f2a49b) border-box !important; */
 
     border: 2px solid transparent !important;
     border-radius: 6px !important;
@@ -242,4 +241,33 @@ h2.title.in-map-list {
 /* SEO section action link (e.g. "Show More") - coral */
 .md-search-seo .search-seo .action {
     color: #ea8379;
+}
+
+/* ===== Button Background Overrides ===== */
+
+/* Address input submit button - solid coral background */
+.address-input.standard .right-box .submit-btn {
+    background-color: #ea8379 !important;
+}
+
+/* Evaluation banner submit button - solid coral background */
+.md-evaluation-banner.layout1 .banner .cover .slide-switch .slide .address-input .submit-btn {
+    background-color: #ea8379 !important;
+}
+
+/* ===== House Grid & Pagination ===== */
+
+/* House detail card padding inside search results grid */
+.search-result-house-grid .house-detail {
+    padding: 20px;
+}
+
+/* Pagination page numbers - white background */
+li.page-num {
+    background-color: #ffffff !important;
+}
+
+/* Pagination hover - coral border */
+.comp-pagination.layout1 .page li:hover {
+    border: 1px solid #ea8379 !important;
 }
