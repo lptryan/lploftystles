@@ -2144,4 +2144,91 @@ span.iconfont.icon-close.tag-close {
 /* Contact page map section background */
 .site-map.needsclick.here-map.broker.search-map.template1 {
     background-color: #000000 !important;
+}
+
+/* --- QUESTIONNAIRE FORM STYLING --- */
+/* Background, Border, and Glow */
+.questionnaire {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%) padding-box,
+        linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%)) border-box !important;
+    border: 2px solid transparent !important;
+    border-radius: 8px !important;
+    animation: goldModalGlow 2s infinite alternate ease-in-out !important;
+    padding: 30px !important;
+}
+
+/* White text for all standard text, questions and labels */
+.questionnaire,
+.questionnaire p,
+.questionnaire span,
+.questionnaire label,
+.questionnaire .question-text {
+    color: #FFFFFF !important;
+}
+
+/* Gold styling for headers inside the questionnaire */
+.questionnaire h1,
+.questionnaire h2,
+.questionnaire h3,
+.questionnaire h4,
+.questionnaire h5,
+.questionnaire h6,
+.questionnaire .title,
+.questionnaire .sub-title {
+    font-family: "Cinzel", serif !important;
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+/* Finished Submit button styling */
+.questionnaire input[type="submit"],
+.questionnaire button,
+.questionnaire .submit-btn,
+.questionnaire .btn {
+    color: #000000 !important;
+    font-weight: 800 !important;
+    font-family: "Cinzel", serif !important;
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    box-shadow: 0 0 10px rgba(255, 215, 130, 0.4) !important;
+    transition: all 0.3s ease !important;
+    padding: 10px 20px !important;
+    cursor: pointer !important;
+}
+
+.questionnaire input[type="submit"]:hover,
+.questionnaire button:hover,
+.questionnaire .submit-btn:hover,
+.questionnaire .btn:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 130, 0.8), 0 0 30px rgba(255, 200, 90, 0.6) !important;
+    transform: scale(1.02);
+}
+
+/* Inputs and checkboxes */
+.questionnaire input[type="text"],
+.questionnaire input[type="email"],
+.questionnaire input[type="tel"],
+.questionnaire select,
+.questionnaire textarea {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 10px !important;
+}
+
+/* Ensure placeholder text is legible */
+.questionnaire input::placeholder,
+.questionnaire textarea::placeholder {
+    color: #666666 !important;
 }
