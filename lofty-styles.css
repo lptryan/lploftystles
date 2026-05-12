@@ -2236,8 +2236,7 @@ span.iconfont.icon-close.tag-close {
 /* --- TOAST WRAPPER STYLING --- */
 /* Target the toast-wrapper to have the black background and gold glow */
 .toast-wrapper,
-.toast-wrapper > .toast,
-.toast-wrapper .toast-content {
+.toast-wrapper > .toast {
     background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%) padding-box,
         linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%)) border-box !important;
     border: 2px solid transparent !important;
@@ -2245,10 +2244,15 @@ span.iconfont.icon-close.tag-close {
     animation: goldModalGlow 2s infinite alternate ease-in-out !important;
 }
 
+/* Ensure toast-content has no border or background (fixes the pill shape issue) */
+.toast-wrapper .toast-content {
+    border: none !important;
+    background: transparent !important;
+}
+
 /* Force child backgrounds to transparent so they don't hide the dark glass */
 .toast-wrapper > div {
     background-color: transparent !important;
-    background: transparent !important;
 }
 
 /* Standard text inside the toast */
