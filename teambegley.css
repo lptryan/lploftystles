@@ -12,6 +12,8 @@
    Typography
    ------------------------------------------------------------ */
 .site-title,
-.house-price {
+.site-title *,
+.house-price,
+.house-price * {
     font-family: 'Marcellus', serif !important;
 }
