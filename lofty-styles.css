@@ -2312,7 +2312,14 @@ span.iconfont.icon-close.tag-close {
     }
 }
 
-/* Remove bottom margin from custom HTML code blocks */
+/* Prevent custom HTML code blocks from getting tucked behind the fixed navigation header */
 .md-custom-code.html-code {
     margin-bottom: 0px !important;
+    margin-top: 139px !important; /* Desktop Nav Offset */
+}
+
+@media (max-width: 800px) {
+    .md-custom-code.html-code {
+        margin-top: 95px !important; /* Mobile Nav Offset */
+    }
 }
