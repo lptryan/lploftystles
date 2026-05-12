@@ -2231,4 +2231,64 @@ span.iconfont.icon-close.tag-close {
 .questionnaire input::placeholder,
 .questionnaire textarea::placeholder {
     color: #666666 !important;
+}
+
+/* --- TOAST WRAPPER STYLING --- */
+/* Target the toast-wrapper to have the black background and gold glow */
+.toast-wrapper,
+.toast-wrapper > .toast,
+.toast-wrapper .toast-content {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%) padding-box,
+        linear-gradient(180deg, hsl(45 100% 70%), hsl(45 100% 50%), hsl(35 80% 40%)) border-box !important;
+    border: 2px solid transparent !important;
+    border-radius: 8px !important;
+    animation: goldModalGlow 2s infinite alternate ease-in-out !important;
+}
+
+/* Force child backgrounds to transparent so they don't hide the dark glass */
+.toast-wrapper > div {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* Standard text inside the toast */
+.toast-wrapper p,
+.toast-wrapper span,
+.toast-wrapper .text,
+.toast-wrapper div {
+    font-family: "Cinzel", serif !important;
+    color: #FFD700 !important;
+}
+
+/* Gold Gradient for specific text elements to match questionnaire */
+.toast-wrapper p,
+.toast-wrapper span,
+.toast-wrapper .text {
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+/* Override svg/icon colors to gold */
+.toast-wrapper svg,
+.toast-wrapper svg path,
+.toast-wrapper svg circle {
+    stroke: #FFD700 !important;
+}
+
+.toast-wrapper .iconfont,
+.toast-wrapper i {
+    color: #FFD700 !important;
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
 }
