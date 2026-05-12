@@ -11,6 +11,7 @@
 /* ------------------------------------------------------------
    Typography
    ------------------------------------------------------------ */
-.site-title {
-    font-family: 'Marcellus', serif;
+.site-title,
+.house-price {
+    font-family: 'Marcellus', serif !important;
 }
