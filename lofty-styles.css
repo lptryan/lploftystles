@@ -2295,4 +2295,24 @@ span.iconfont.icon-close.tag-close {
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
+}
+
+/* =========================================
+   ADDITIONAL CONTAINER & SPACING OVERRIDES
+   ========================================= */
+
+/* Force full width for mg-container globally and in responsive breakpoints */
+.mg-container {
+    width: 100% !important;
+}
+
+@media (max-width: 800px) {
+    .mg-container {
+        width: 100% !important;
+    }
+}
+
+/* Remove bottom margin from custom HTML code blocks */
+.md-custom-code.html-code {
+    margin-bottom: 0px !important;
 }
