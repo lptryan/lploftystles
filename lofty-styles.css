@@ -2083,4 +2083,61 @@ span.iconfont.icon-close.tag-close {
 .pop-form hgroup h3 {
     font-size: 20px !important;
 }
+
+/* Remove QR code from footer */
+.download-closely {
+    display: none !important;
+}
+
+/* Remove footer links */
+.top-content .left-content {
+    display: none;
+}
+
+/* ===== Contact Page Agent Info Styling ===== */
+/* Dark black glass background matching media-content-v2 */
+.agent-contact-content {
+    background: rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 215, 0, 0.3) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+    padding: 20px !important;
+}
+
+/* Icons with Gold Gradient */
+.agent-contact-content .iconfont,
+.agent-contact-content i {
+    background: linear-gradient(180deg,
+            hsl(45 100% 70%),
+            hsl(45 100% 50%),
+            hsl(35 80% 40%)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+    display: inline-block !important;
+}
+
+/* Links to be Gold, Underlined */
+.agent-contact-content a {
+    color: #FFD700 !important;
+    text-decoration: underline !important;
+    transition: all 0.3s ease !important;
+    background: transparent !important;
+}
+
+/* Links Glow on Hover */
+.agent-contact-content a:hover {
+    color: #FFF200 !important;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.6) !important;
+}
+
+/* Standard text color to contrast with black glass */
+.agent-contact-content p, 
+.agent-contact-content span {
+    color: #FFFFFF !important;
+    background: transparent !important;
+}
 
