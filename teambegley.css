@@ -1,1 +1,16 @@
+/* ============================================================
+   Team Begley — Custom Styles
+   Site: https://patriciabegley.lpthomesearch.com/
+   ============================================================ */
 
+/* ------------------------------------------------------------
+   Google Fonts Import
+   ------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ------------------------------------------------------------
+   Typography
+   ------------------------------------------------------------ */
+.site-title {
+    font-family: 'Marcellus', serif;
+}
