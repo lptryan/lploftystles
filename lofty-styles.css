@@ -2322,4 +2322,38 @@ span.iconfont.icon-close.tag-close {
     .md-custom-code.html-code {
         margin-top: 95px !important; /* Mobile Nav Offset */
     }
+}
+
+/* =========================================
+   LEGIBILITY UPGRADES (Detail & Grid Text)
+   ========================================= */
+
+/* House list table column text */
+.house-table-column {
+    color: #FFFFFF !important;
+}
+
+/* Pagination number color overrides */
+.comp-pagination .page li {
+    color: #ffffff !important;
+}
+
+/* Key detail info panel headers */
+.md-detail-info .detail-info-group .key-info .content .info-content .info-title {
+    color: #FFFFFF !important;
+}
+
+/* Key detail info panel descriptive data */
+.md-detail-info.broker .detail-info .detail-info-group .key-info .info-content .info-data {
+    color: #cdcdcd !important;
+}
+
+/* Property original price highlights */
+.price-container.broker .origin-price {
+    color: #FFFFFF !important;
+}
+
+/* Count container descriptions */
+.count-container.broker div .desc {
+    color: #c3c3c3 !important;
 }
