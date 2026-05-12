@@ -11,12 +11,19 @@
 /* ------------------------------------------------------------
    Typography
    ------------------------------------------------------------ */
-body .site-title,
-body .site-title *,
-body .house-price,
-body .house-price *,
-body h1, body h2, body h3, body h4, body h5, body h6,
-body .agent-name,
-body .agent-name * {
+html body .site-title,
+html body .site-title *,
+html body .house-title,
+html body .house-title *,
+html body .house-price,
+html body .house-price *,
+html body .agent-name,
+html body .agent-name *,
+html body h1, html body h1 *,
+html body h2, html body h2 *,
+html body h3, html body h3 *,
+html body h4, html body h4 *,
+html body h5, html body h5 *,
+html body h6, html body h6 * {
     font-family: 'Marcellus', serif !important;
 }
