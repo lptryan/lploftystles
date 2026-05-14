@@ -2357,5 +2357,21 @@ span.iconfont.icon-close.tag-close {
 .count-container.broker div .desc {
     color: #c3c3c3 !important;
 }
- 
+
+/* Ensure house address is explicitly white and overrides any inherited gold gradients */
+.house-address {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: unset !important;
+    background: none !important;
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
+}
+
+/* Mobile Padding Override for Search Bar to prevent layout overlapping */
+@media (max-width: 800px) {
+    .md-search-bar.layout1 {
+        padding: 50px 20px 10px 20px !important;
+    }
+}
+
 
