@@ -2374,4 +2374,11 @@ span.iconfont.icon-close.tag-close {
     }
 }
 
+/* Key detail headers and mortgage titles legible white overrides */
+.mg-title-richtext, 
+.mg-title, 
+.md-detail-info .detail-info-group .key-info .detail-title {
+    color: #FFFFFF !important;
+}
+
 
